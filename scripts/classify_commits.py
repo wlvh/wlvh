@@ -165,12 +165,59 @@ def month_key(*, iso_date: str) -> str:
     return iso_date[:7]
 
 
+def bucket_samples_for_window(
+    *,
+    rows: list[dict[str, Any]],
+    window_months: set[str],
+    sample_limit: int = 5,
+) -> dict[str, dict[str, dict[str, Any]]]:
+    """Build per (month, theme) sample data for the supplied month window.
+
+    For each bucket the result records the public-repo / private-repo commit
+    counts and a tail sample of public-repo commit subjects (repo name +
+    subject only). Private-repo subjects are never recorded — only their
+    count — so the resulting structure is safe to publish.
+    """
+
+    samples: dict[str, dict[str, dict[str, Any]]] = {}
+    for row in sorted(rows, key=lambda r: r["date"]):
+        month = month_key(iso_date=row["date"])
+        if month not in window_months:
+            continue
+        category = row["category"]
+        if category == "other":
+            continue
+        month_bucket = samples.setdefault(month, {})
+        theme_bucket = month_bucket.setdefault(
+            category,
+            {"public_count": 0, "private_count": 0, "public_samples": []},
+        )
+        if row["repo_private"]:
+            theme_bucket["private_count"] += 1
+        else:
+            theme_bucket["public_count"] += 1
+            theme_bucket["public_samples"].append(
+                {"repo": row["repo"], "subject": row["subject"]}
+            )
+            if len(theme_bucket["public_samples"]) > sample_limit:
+                theme_bucket["public_samples"] = (
+                    theme_bucket["public_samples"][-sample_limit:]
+                )
+    return samples
+
+
 def public_aggregate(
     *,
     rows: list[dict[str, Any]],
     taxonomy: dict[str, Any],
 ) -> dict[str, Any]:
-    """Build a public-safe aggregate without raw commit text or private names."""
+    """Build a public-safe aggregate without raw commit text or private names.
+
+    The aggregate also includes per (month, theme) ``bucket_samples`` for the
+    last twelve calendar months. Each bucket records public/private commit
+    counts; only public-repo commits contribute subject samples, so the
+    aggregate stays safe to commit alongside the rendered SVG.
+    """
 
     categories_by_id = {
         category["id"]: category for category in taxonomy["categories"]
@@ -199,8 +246,19 @@ def public_aggregate(
             }
         )
 
+    # Bucket samples are only needed for the months the chart actually shows,
+    # which is the trailing twelve-month window aligned with GitHub's
+    # contribution heatmap.
+    all_months = sorted({month_key(iso_date=row["date"]) for row in rows})
+    window_months = (
+        set(all_months[-12:]) if len(all_months) >= 12 else set(all_months)
+    )
+    bucket_samples = bucket_samples_for_window(
+        rows=rows, window_months=window_months
+    )
+
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "scope": (
             "owned non-fork default branches; "
@@ -218,6 +276,7 @@ def public_aggregate(
             month: dict(counter)
             for month, counter in sorted(monthly_counts.items())
         },
+        "bucket_samples": bucket_samples,
     }
 
 

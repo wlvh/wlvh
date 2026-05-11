@@ -178,11 +178,69 @@ def dominant_theme(*, column_data: dict[str, int]) -> str | None:
     return candidates[0][0]
 
 
+def _truncate(*, subject: str, limit: int = 60) -> str:
+    """Clip ``subject`` to ``limit`` characters with an ellipsis if needed."""
+
+    text = subject.strip()
+    if len(text) <= limit:
+        return text
+    return text[: limit - 1] + "…"
+
+
+def build_tooltip(
+    *,
+    theme_label: str,
+    count: int,
+    month_key: str,
+    bucket: dict[str, Any] | None,
+) -> str:
+    """Build a multi-line tooltip string for one stacked segment.
+
+    The first line is always a single-line summary. If sample data is
+    available for the bucket, follow with a short list of public-repo
+    commit subjects (repo + subject, ellipsised) and a count of any
+    private-repo commits that contributed to the same segment.
+    """
+
+    year, month = month_key.split("-")
+    month_name = MONTH_ABBREV[int(month) - 1]
+    lines = [f"{theme_label} · {count} in {month_name} {year}"]
+
+    if bucket is None:
+        return "\n".join(lines)
+
+    public_count = int(bucket.get("public_count", 0))
+    private_count = int(bucket.get("private_count", 0))
+    samples = list(bucket.get("public_samples", []))
+
+    if public_count > 0:
+        lines.append("")
+        lines.append(f"Public ({public_count}):")
+        # Show up to three most recent samples; the JSON already stores a
+        # tail of up to five, so this gives consistent tooltip height.
+        visible_samples = samples[-3:]
+        for sample in visible_samples:
+            repo = sample.get("repo", "?")
+            subject = _truncate(subject=sample.get("subject", ""))
+            lines.append(f"• {repo} — {subject}")
+        remaining = public_count - len(visible_samples)
+        if remaining > 0:
+            lines.append(f"… and {remaining} more public")
+
+    if private_count > 0:
+        if public_count > 0:
+            lines.append("")
+        lines.append(f"Private ({private_count})")
+
+    return "\n".join(lines)
+
+
 def render_chart(
     *,
     months: list[str],
     monthly_counts: dict[str, dict[str, int]],
     themes_by_id: dict[str, dict[str, Any]],
+    bucket_samples: dict[str, dict[str, dict[str, Any]]],
     chart_x: float,
     chart_y: float,
     chart_w: float,
@@ -260,7 +318,12 @@ def render_chart(
             radius = 3 if (is_top and seg_h >= 6) else 0
             theme_label = themes_by_id.get(tid, {}).get("label", tid)
             tooltip = html.escape(
-                f"{theme_label}: {count} commits in {month_key}"
+                build_tooltip(
+                    theme_label=theme_label,
+                    count=count,
+                    month_key=month_key,
+                    bucket=bucket_samples.get(month_key, {}).get(tid),
+                )
             )
 
             if radius > 0:
@@ -541,6 +604,7 @@ def render_svg(
             months=months,
             monthly_counts=monthly_counts,
             themes_by_id=themes_by_id,
+            bucket_samples=aggregate.get("bucket_samples", {}),
             chart_x=chart_x,
             chart_y=chart_y,
             chart_w=chart_w,

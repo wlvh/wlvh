@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "generated_at_utc": "2026-05-11T08:44:58.718373+00:00",
+  "schema_version": 2,
+  "generated_at_utc": "2026-05-11T09:09:17.786713+00:00",
   "scope": "owned non-fork default branches; private commit messages aggregated only",
   "taxonomy_note": "Private repository names appear only in this ignored local taxonomy; the committed taxonomy redacts private repo priors.",
   "raw_messages_committed": false,
@@ -312,6 +312,414 @@
       "llm-eval-contracts": 2,
       "content-methodology": 29,
       "backtest-mcs": 1
+    }
+  },
+  "bucket_samples": {
+    "2025-06": {
+      "content-methodology": {
+        "public_count": 0,
+        "private_count": 56,
+        "public_samples": []
+      },
+      "agent-orchestration": {
+        "public_count": 0,
+        "private_count": 54,
+        "public_samples": []
+      },
+      "quant-optuna": {
+        "public_count": 0,
+        "private_count": 3,
+        "public_samples": []
+      }
+    },
+    "2025-07": {
+      "agent-orchestration": {
+        "public_count": 0,
+        "private_count": 65,
+        "public_samples": []
+      },
+      "content-methodology": {
+        "public_count": 3,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "paper-hub",
+            "subject": "Initial commit"
+          },
+          {
+            "repo": "paper-hub",
+            "subject": "Update README.md"
+          },
+          {
+            "repo": "paper-hub",
+            "subject": "Update README.md"
+          }
+        ]
+      },
+      "ast-tooling": {
+        "public_count": 52,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "PySymphony",
+            "subject": "fix: 修复Issue #37 - 合并脚本静态审计失败问题"
+          },
+          {
+            "repo": "PySymphony",
+            "subject": "fix: 解决 Issue #39 - ASTAuditor 对合法 Python 语法的误报问题"
+          },
+          {
+            "repo": "PySymphony",
+            "subject": "fix: 修复 Issue #41 中的四个核心架构缺陷"
+          },
+          {
+            "repo": "PySymphony",
+            "subject": "fix: 修复符号 scope 为 None 时的 AttributeError"
+          },
+          {
+            "repo": "PySymphony",
+            "subject": "fix: 修复 advanced_merge.py 的多个关键问题"
+          }
+        ]
+      },
+      "quant-optuna": {
+        "public_count": 0,
+        "private_count": 40,
+        "public_samples": []
+      },
+      "backtest-mcs": {
+        "public_count": 1,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "RBT_RL",
+            "subject": "feat: 应用旧版本的简洁设计理念到新版本"
+          }
+        ]
+      },
+      "live-trading": {
+        "public_count": 0,
+        "private_count": 20,
+        "public_samples": []
+      },
+      "timeseries-ml": {
+        "public_count": 0,
+        "private_count": 29,
+        "public_samples": []
+      }
+    },
+    "2025-08": {
+      "quant-optuna": {
+        "public_count": 0,
+        "private_count": 83,
+        "public_samples": []
+      },
+      "live-trading": {
+        "public_count": 0,
+        "private_count": 4,
+        "public_samples": []
+      },
+      "timeseries-ml": {
+        "public_count": 0,
+        "private_count": 8,
+        "public_samples": []
+      }
+    },
+    "2025-09": {
+      "live-trading": {
+        "public_count": 0,
+        "private_count": 2,
+        "public_samples": []
+      },
+      "quant-optuna": {
+        "public_count": 0,
+        "private_count": 14,
+        "public_samples": []
+      },
+      "data-pipeline": {
+        "public_count": 0,
+        "private_count": 17,
+        "public_samples": []
+      }
+    },
+    "2025-10": {
+      "quant-optuna": {
+        "public_count": 0,
+        "private_count": 1,
+        "public_samples": []
+      },
+      "backtest-mcs": {
+        "public_count": 0,
+        "private_count": 37,
+        "public_samples": []
+      },
+      "data-pipeline": {
+        "public_count": 0,
+        "private_count": 50,
+        "public_samples": []
+      },
+      "semantic-dax": {
+        "public_count": 25,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "Process_SemanticModel",
+            "subject": "Create json.py"
+          },
+          {
+            "repo": "Process_SemanticModel",
+            "subject": "修复契约 JSON 的时间序列化问题"
+          },
+          {
+            "repo": "Process_SemanticModel",
+            "subject": "Create insight.md"
+          },
+          {
+            "repo": "Process_SemanticModel",
+            "subject": "Update insight.md"
+          },
+          {
+            "repo": "Process_SemanticModel",
+            "subject": "Update insight.md"
+          }
+        ]
+      },
+      "timeseries-ml": {
+        "public_count": 0,
+        "private_count": 5,
+        "public_samples": []
+      }
+    },
+    "2025-11": {
+      "semantic-dax": {
+        "public_count": 4,
+        "private_count": 46,
+        "public_samples": [
+          {
+            "repo": "Process_SemanticModel",
+            "subject": "Update insight.md"
+          },
+          {
+            "repo": "Process_SemanticModel",
+            "subject": "Update insight.md"
+          },
+          {
+            "repo": "Process_SemanticModel",
+            "subject": "Update insight.md"
+          },
+          {
+            "repo": "Process_SemanticModel",
+            "subject": "Update insight.md"
+          }
+        ]
+      },
+      "backtest-mcs": {
+        "public_count": 0,
+        "private_count": 4,
+        "public_samples": []
+      }
+    },
+    "2025-12": {
+      "semantic-dax": {
+        "public_count": 0,
+        "private_count": 17,
+        "public_samples": []
+      },
+      "backtest-mcs": {
+        "public_count": 0,
+        "private_count": 6,
+        "public_samples": []
+      },
+      "agent-orchestration": {
+        "public_count": 0,
+        "private_count": 8,
+        "public_samples": []
+      }
+    },
+    "2026-01": {
+      "semantic-dax": {
+        "public_count": 0,
+        "private_count": 32,
+        "public_samples": []
+      },
+      "quant-optuna": {
+        "public_count": 0,
+        "private_count": 5,
+        "public_samples": []
+      }
+    },
+    "2026-02": {
+      "semantic-dax": {
+        "public_count": 0,
+        "private_count": 9,
+        "public_samples": []
+      },
+      "quant-optuna": {
+        "public_count": 0,
+        "private_count": 16,
+        "public_samples": []
+      }
+    },
+    "2026-03": {
+      "semantic-dax": {
+        "public_count": 0,
+        "private_count": 22,
+        "public_samples": []
+      },
+      "llm-eval-contracts": {
+        "public_count": 0,
+        "private_count": 5,
+        "public_samples": []
+      },
+      "quant-optuna": {
+        "public_count": 0,
+        "private_count": 17,
+        "public_samples": []
+      },
+      "agent-orchestration": {
+        "public_count": 29,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "coding-workflow",
+            "subject": "Add files via upload"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "Update SOP document with revised principles and guidelines"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "Update README.md"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "Update TESTING.md"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "Delete language and format guidelines section"
+          }
+        ]
+      }
+    },
+    "2026-04": {
+      "quant-optuna": {
+        "public_count": 0,
+        "private_count": 8,
+        "public_samples": []
+      },
+      "agent-orchestration": {
+        "public_count": 47,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "coding-workflow",
+            "subject": "修复文档"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "simplify workflow docs sync handoff"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "Update OPERATIONS.md"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "docs: tighten sync pass guidance"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "docs: make sync pass prompts executable"
+          }
+        ]
+      },
+      "live-trading": {
+        "public_count": 0,
+        "private_count": 8,
+        "public_samples": []
+      },
+      "llm-eval-contracts": {
+        "public_count": 0,
+        "private_count": 16,
+        "public_samples": []
+      },
+      "content-methodology": {
+        "public_count": 0,
+        "private_count": 24,
+        "public_samples": []
+      }
+    },
+    "2026-05": {
+      "agent-orchestration": {
+        "public_count": 10,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "coding-workflow",
+            "subject": "Update TESTING.md"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "add bilingual workflow sync paths"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "docs: expand root readme english entrypoint"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "文档更新"
+          },
+          {
+            "repo": "acceptance-agent",
+            "subject": "Create acceptance agent companion artifact"
+          }
+        ]
+      },
+      "quant-optuna": {
+        "public_count": 0,
+        "private_count": 2,
+        "public_samples": []
+      },
+      "llm-eval-contracts": {
+        "public_count": 0,
+        "private_count": 2,
+        "public_samples": []
+      },
+      "content-methodology": {
+        "public_count": 4,
+        "private_count": 25,
+        "public_samples": [
+          {
+            "repo": "wlvh",
+            "subject": "Add profile README"
+          },
+          {
+            "repo": "wlvh",
+            "subject": "Fix essay title punctuation"
+          },
+          {
+            "repo": "wlvh",
+            "subject": "Expand profile README with public evidence map"
+          },
+          {
+            "repo": "wlvh",
+            "subject": "Add semantic model work to profile"
+          }
+        ]
+      },
+      "backtest-mcs": {
+        "public_count": 1,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "RBT",
+            "subject": "Clarify non-commercial license terms"
+          }
+        ]
+      }
     }
   }
 }
