@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "derived_from": "Exploration of 1833 owned non-fork default-branch commits on 2026-05-11 UTC.",
+  "privacy_note": "Private repository names are used only in ignored local taxonomy files; the committed taxonomy redacts private repo priors.",
+  "repo_weight": 5,
+  "keyword_weight": 1,
+  "categories": [
+    {
+      "id": "knowledge-writing",
+      "label": "Knowledge & Writing",
+      "color": "#2f6f9f",
+      "repos": ["paper-hub"],
+      "keywords": ["note", "notes", "interview", "howtousellm", "q-learning", "paper", "archive", "daily radar", "digest", "writing"]
+    },
+    {
+      "id": "quant-research",
+      "label": "Quant Research Infra",
+      "color": "#9a6b00",
+      "repos": ["RBT", "RBT_RL"],
+      "keywords": ["backtest", "backtesting", "optuna", "rolling", "alpha", "mcs", "strategy", "strategies", "crypto", "funding", "coingecko", "sleeve"]
+    },
+    {
+      "id": "agent-workflows",
+      "label": "Agent Workflows",
+      "color": "#6f42c1",
+      "repos": ["coding-workflow", "acceptance-agent"],
+      "keywords": ["agent", "agents", "claude", "codex", "workflow", "workflows", "acceptance", "review", "merge-readiness", "pr assistant", "claude-code-review"]
+    },
+    {
+      "id": "semantic-dax",
+      "label": "NL->DAX & Semantic Models",
+      "color": "#0b7a75",
+      "repos": ["Process_SemanticModel"],
+      "keywords": ["nl2dax", "dax", "semantic", "power bi", "fabric", "measure", "selectcolumns", "token", "runtime", "contract", "flow"]
+    },
+    {
+      "id": "static-analysis",
+      "label": "Static Analysis Tools",
+      "color": "#8b3a3a",
+      "repos": ["PySymphony"],
+      "keywords": ["ast", "astauditor", "static", "symbol", "scope", "merge", "advanced_merge", "import", "refactor"]
+    },
+    {
+      "id": "publishing-platform",
+      "label": "Publishing Platform",
+      "color": "#2f7d32",
+      "repos": ["hugo-blog-theme", "wlvh"],
+      "keywords": ["hugo", "blog", "diary", "seo", "sitemap", "cloudflare", "profile", "readme", "thumbnail", "analytics"]
+    },
+    {
+      "id": "data-product-infra",
+      "label": "Data/Product Infra",
+      "color": "#1f6feb",
+      "repos": [],
+      "keywords": ["api", "backend", "rag", "browser", "interface", "pipeline", "transform", "replay", "azure", "openai", "cors"]
+    },
+    {
+      "id": "quality-delivery",
+      "label": "Quality & Delivery",
+      "color": "#bf3989",
+      "repos": [],
+      "keywords": ["test", "tests", "testing", "ci", "github actions", "smoke", "fix", "bug", "harden", "regression", "security", "utf-8"]
+    },
+    {
+      "id": "repo-hygiene",
+      "label": "Repo Hygiene",
+      "color": "#666666",
+      "repos": ["hello-world"],
+      "keywords": ["delete", "cleanup", "clean up", "gitignore", "license", "rename", "remove", "initial commit", "add files via upload"]
+    },
+    {
+      "id": "other",
+      "label": "Mixed / Other",
+      "color": "#8c8c8c",
+      "repos": [],
+      "keywords": []
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-05-11T08:07:22.723973+00:00",
+  "scope": "owned non-fork default branches; private commit messages aggregated only",
+  "taxonomy_note": "Private repository names are used only in ignored local taxonomy files; the committed taxonomy redacts private repo priors.",
+  "raw_messages_committed": false,
+  "total_commits": 1833,
+  "public_commits": 360,
+  "private_commits": 1473,
+  "public_repo_count": 10,
+  "private_repo_count": 17,
+  "categories": [
+    {
+      "id": "knowledge-writing",
+      "label": "Knowledge & Writing",
+      "color": "#2f6f9f",
+      "count": 533,
+      "share": 0.2908
+    },
+    {
+      "id": "quant-research",
+      "label": "Quant Research Infra",
+      "color": "#9a6b00",
+      "count": 527,
+      "share": 0.2875
+    },
+    {
+      "id": "semantic-dax",
+      "label": "NL->DAX & Semantic Models",
+      "color": "#0b7a75",
+      "count": 265,
+      "share": 0.1446
+    },
+    {
+      "id": "agent-workflows",
+      "label": "Agent Workflows",
+      "color": "#6f42c1",
+      "count": 236,
+      "share": 0.1288
+    },
+    {
+      "id": "data-product-infra",
+      "label": "Data/Product Infra",
+      "color": "#1f6feb",
+      "count": 104,
+      "share": 0.0567
+    },
+    {
+      "id": "publishing-platform",
+      "label": "Publishing Platform",
+      "color": "#2f7d32",
+      "count": 89,
+      "share": 0.0486
+    },
+    {
+      "id": "static-analysis",
+      "label": "Static Analysis Tools",
+      "color": "#8b3a3a",
+      "count": 76,
+      "share": 0.0415
+    },
+    {
+      "id": "repo-hygiene",
+      "label": "Repo Hygiene",
+      "color": "#666666",
+      "count": 3,
+      "share": 0.0016
+    }
+  ],
+  "monthly_counts": {
+    "2017-07": {
+      "repo-hygiene": 3
+    },
+    "2020-08": {
+      "publishing-platform": 11
+    },
+    "2020-09": {
+      "publishing-platform": 1
+    },
+    "2020-10": {
+      "publishing-platform": 1
+    },
+    "2020-11": {
+      "publishing-platform": 3
+    },
+    "2021-02": {
+      "publishing-platform": 2
+    },
+    "2021-05": {
+      "publishing-platform": 2
+    },
+    "2021-08": {
+      "publishing-platform": 9
+    },
+    "2021-10": {
+      "publishing-platform": 9
+    },
+    "2021-11": {
+      "publishing-platform": 2
+    },
+    "2021-12": {
+      "publishing-platform": 1
+    },
+    "2022-02": {
+      "publishing-platform": 8
+    },
+    "2022-03": {
+      "publishing-platform": 4
+    },
+    "2022-04": {
+      "publishing-platform": 3
+    },
+    "2022-05": {
+      "publishing-platform": 1
+    },
+    "2022-06": {
+      "publishing-platform": 1
+    },
+    "2022-07": {
+      "publishing-platform": 1
+    },
+    "2022-08": {
+      "publishing-platform": 3
+    },
+    "2022-09": {
+      "publishing-platform": 2
+    },
+    "2023-05": {
+      "quant-research": 34
+    },
+    "2023-06": {
+      "quant-research": 15
+    },
+    "2023-07": {
+      "quant-research": 7,
+      "knowledge-writing": 74
+    },
+    "2023-08": {
+      "knowledge-writing": 25,
+      "quant-research": 9
+    },
+    "2023-09": {
+      "knowledge-writing": 28,
+      "quant-research": 2
+    },
+    "2023-10": {
+      "knowledge-writing": 57,
+      "quant-research": 5
+    },
+    "2023-11": {
+      "knowledge-writing": 36,
+      "quant-research": 13
+    },
+    "2023-12": {
+      "knowledge-writing": 9,
+      "quant-research": 1
+    },
+    "2024-01": {
+      "knowledge-writing": 4
+    },
+    "2024-02": {
+      "knowledge-writing": 10
+    },
+    "2024-03": {
+      "quant-research": 1
+    },
+    "2024-04": {
+      "knowledge-writing": 11,
+      "quant-research": 5
+    },
+    "2024-05": {
+      "knowledge-writing": 7,
+      "quant-research": 8
+    },
+    "2024-06": {
+      "quant-research": 18,
+      "knowledge-writing": 7
+    },
+    "2024-07": {
+      "quant-research": 6
+    },
+    "2024-08": {
+      "quant-research": 17
+    },
+    "2024-09": {
+      "quant-research": 14,
+      "knowledge-writing": 16
+    },
+    "2024-10": {
+      "quant-research": 13,
+      "knowledge-writing": 47
+    },
+    "2024-11": {
+      "quant-research": 3,
+      "knowledge-writing": 37,
+      "data-product-infra": 11
+    },
+    "2024-12": {
+      "data-product-infra": 2
+    },
+    "2025-01": {
+      "knowledge-writing": 5,
+      "data-product-infra": 3
+    },
+    "2025-03": {
+      "quant-research": 6,
+      "knowledge-writing": 3
+    },
+    "2025-04": {
+      "knowledge-writing": 70,
+      "quant-research": 6
+    },
+    "2025-05": {
+      "quant-research": 14,
+      "knowledge-writing": 8,
+      "data-product-infra": 7
+    },
+    "2025-06": {
+      "data-product-infra": 10,
+      "knowledge-writing": 47,
+      "quant-research": 3,
+      "agent-workflows": 53
+    },
+    "2025-07": {
+      "agent-workflows": 75,
+      "knowledge-writing": 3,
+      "static-analysis": 76,
+      "quant-research": 95
+    },
+    "2025-08": {
+      "quant-research": 98
+    },
+    "2025-09": {
+      "quant-research": 18,
+      "data-product-infra": 21
+    },
+    "2025-10": {
+      "quant-research": 46,
+      "data-product-infra": 50,
+      "semantic-dax": 44
+    },
+    "2025-11": {
+      "semantic-dax": 60,
+      "quant-research": 5
+    },
+    "2025-12": {
+      "semantic-dax": 26,
+      "quant-research": 8,
+      "agent-workflows": 10
+    },
+    "2026-01": {
+      "semantic-dax": 46,
+      "quant-research": 5
+    },
+    "2026-02": {
+      "semantic-dax": 12,
+      "quant-research": 16
+    },
+    "2026-03": {
+      "semantic-dax": 42,
+      "quant-research": 17,
+      "agent-workflows": 29
+    },
+    "2026-04": {
+      "quant-research": 16,
+      "agent-workflows": 52,
+      "semantic-dax": 32,
+      "knowledge-writing": 25
+    },
+    "2026-05": {
+      "agent-workflows": 17,
+      "quant-research": 3,
+      "semantic-dax": 3,
+      "knowledge-writing": 4,
+      "publishing-platform": 25
+    }
+  }
+}

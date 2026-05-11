@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+data/commits_raw.jsonl
+data/commits_classified.jsonl
+data/commit_taxonomy.local.json

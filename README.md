@@ -1,5 +1,7 @@
 # wlvh
 
+<img src="assets/commit-topic-map.svg" align="right" width="360" alt="Commit topic map generated from 1,833 commits" />
+
 I build agentic software systems that turn messy requirements into tested, reviewable, and maintainable code changes.
 
 Current focus: agent evaluation, code-review automation, NL->DAX workflows, quant research infrastructure, and the institutional patterns around AI-assisted engineering.
