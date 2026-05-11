@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>wlvh — commit topic map · past 12 months</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Interactive monthly stacked-column view of wlvh's past 12 months of commits across ten working themes, with per-segment hover tooltips listing public-repo commit subjects.">
+<style>
+  :root {
+    color-scheme: light;
+    --fg: #1f2328;
+    --muted: #656d76;
+    --soft: #8c959f;
+    --link: #0969da;
+    --border: #d0d7de;
+    --bg: #ffffff;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+  }
+  body {
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 24px 64px;
+    line-height: 1.55;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 0 0 6px;
+    font-weight: 700;
+  }
+  p.lede {
+    color: var(--muted);
+    margin: 0 0 24px;
+    font-size: 13px;
+  }
+  p.lede strong {
+    color: var(--fg);
+    font-weight: 600;
+  }
+  a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .chart-wrap {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px;
+    background: var(--bg);
+  }
+  .chart {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  footer {
+    margin-top: 32px;
+    font-size: 12px;
+    color: var(--soft);
+  }
+  footer a {
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<h1>wlvh — commit topic map · past 12 months</h1>
+<p class="lede">
+  Hover any colored segment to see
+  <strong>which public-repo commits</strong>
+  contributed to that month · theme bucket. Private-repo work is counted
+  but never quoted — see the
+  <a href="https://github.com/wlvh/wlvh/blob/main/docs/commit-topic-method.md">methodology note</a>
+  for the privacy boundary.
+</p>
+<div class="chart-wrap">
+  <object class="chart" data="assets/commit-topic-map.svg" type="image/svg+xml" aria-label="Monthly commit themes over the past 12 months">
+    Your browser blocked the embedded SVG. Open
+    <a href="assets/commit-topic-map.svg">the SVG directly</a>
+    instead.
+  </object>
+</div>
+<footer>
+  Source: <a href="https://github.com/wlvh/wlvh">github.com/wlvh/wlvh</a>
+  · regenerated deterministically, see
+  <a href="https://github.com/wlvh/wlvh/blob/main/AGENTS.md">AGENTS.md</a>.
+</footer>
+</body>
+</html>

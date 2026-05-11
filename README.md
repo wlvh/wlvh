@@ -2,9 +2,11 @@
 
 <img src="assets/commit-topic-map.svg" alt="Past 12 months of commits stacked by working theme: Agent Orchestration, LLM Eval & Contracts, Quant Strategy & Optuna, Live Trading Ops, Backtest & MCS Research, Time-Series ML, Semantic Model & DAX, Data Pipeline & Schema, AST & Code Tooling, Content & Methodology" />
 
+<sub>Static snapshot. Hover any segment in the <a href="https://wlvh.github.io/wlvh/">interactive version</a> to see public-repo commit subjects per month · theme bucket. Methodology in <a href="docs/commit-topic-method.md"><code>docs/commit-topic-method.md</code></a>.</sub>
+
 I build agentic software systems that turn messy requirements into tested, reviewable, and maintainable code changes.
 
-Current focus: agent evaluation, code-review automation, NL->DAX workflows, quant research infrastructure, and the institutional patterns around AI-assisted engineering. The chart above breaks the last twelve months of owned commits into ten working themes; method and taxonomy live in [`docs/commit-topic-method.md`](docs/commit-topic-method.md).
+Current focus: agent evaluation, code-review automation, NL->DAX workflows, quant research infrastructure, and the institutional patterns around AI-assisted engineering.
 
 ## Selected Work
 
