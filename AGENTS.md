@@ -29,7 +29,7 @@ explains the *how*.
 
 ## Standard regeneration
 
-Run these three scripts in order. Each command is independent of in-memory
+Run these four scripts in order. Each command is independent of in-memory
 state, so you can stop and resume between them.
 
 ```bash
@@ -47,10 +47,23 @@ python3 scripts/classify_commits.py \
 python3 scripts/render_commit_topic_map.py \
   --aggregate data/commit_topics_public.json \
   --output assets/commit-topic-map.svg
+
+python3 scripts/build_index_html.py \
+  --svg assets/commit-topic-map.svg \
+  --output index.html
 ```
 
 Default render size is 880 × 660. Pass `--width` / `--height` only if you
 have a specific reason — the README references the SVG without dimensions.
+
+The final step rebuilds `index.html` with the SVG inlined into the main
+document plus a JavaScript tooltip handler. This is necessary because
+GitHub Pages can serve the static SVG, but Chromium does not fire
+`<title>`-based native tooltips on segments inside an `<object>`-embedded
+SVG sub-document. Inlining puts the segments in the main document where a
+small JS handler can show a styled tooltip on hover. Skip this step only
+if you have a reason — the profile README's `interactive version` link
+goes to the GitHub Pages copy of `index.html`.
 
 ## Sanity checks before committing
 
