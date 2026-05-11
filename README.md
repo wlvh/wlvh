@@ -12,5 +12,5 @@ I work on AI agents, code review systems, software infrastructure, and bilingual
 
 Recent essays:
 
-- [Editor's Desk . May Week 2: When Scaffolding Starts to Cost You](https://huaweidata.com/diary/2026-05-07/)
-- [Editor's Desk . Week 1 of May: Paper Collusion, Old Weak Layers, and the Second Chair](https://huaweidata.com/diary/2026-05-05/)
+- [Editor's Desk · May Week 2: When Scaffolding Starts to Cost You](https://huaweidata.com/diary/2026-05-07/)
+- [Editor's Desk · Week 1 of May: Paper Collusion, Old Weak Layers, and the Second Chair](https://huaweidata.com/diary/2026-05-05/)
