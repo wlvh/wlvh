@@ -1,8 +1,11 @@
-"""Render the public commit topic aggregate as an SVG profile card.
+"""Render the public commit topic aggregate as a monthly stacked-column SVG.
 
 Purpose:
-    Produce a compact right-aligned visual for GitHub profile README without
-    requiring browser-side JavaScript or external image services.
+    Produce a profile-readme SVG that visually continues GitHub's contribution
+    heatmap: same neutral background and font stack, distinct hues per working
+    theme, 12 monthly columns covering the same window as the GitHub heatmap,
+    a dominant-theme annotation above each column, per-theme sparklines in the
+    legend, and a dashed marker on the calendar year boundary.
 
 Call graph:
     main -> parse_args -> load_aggregate -> render_svg -> write_svg
@@ -16,6 +19,47 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
+
+# Fixed stacking order so columns are comparable across months. "other" is
+# excluded from the visual but kept in the aggregate.
+THEME_ORDER = (
+    "agent-orchestration",
+    "llm-eval-contracts",
+    "quant-optuna",
+    "live-trading",
+    "backtest-mcs",
+    "timeseries-ml",
+    "semantic-dax",
+    "data-pipeline",
+    "ast-tooling",
+    "content-methodology",
+)
+
+# Short labels used for the small dominant-theme annotation above each column.
+THEME_SHORT_LABEL = {
+    "agent-orchestration": "Agent",
+    "llm-eval-contracts": "Eval",
+    "quant-optuna": "Quant",
+    "live-trading": "Live",
+    "backtest-mcs": "Backtest",
+    "timeseries-ml": "TS-ML",
+    "semantic-dax": "Semantic",
+    "data-pipeline": "Data",
+    "ast-tooling": "Tooling",
+    "content-methodology": "Content",
+}
+
+MONTH_ABBREV = (
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+)
+FONT_STACK = (
+    "ui-sans-serif, -apple-system, BlinkMacSystemFont, "
+    "'Segoe UI', Helvetica, Arial, sans-serif"
+)
+# A column annotation is only worth showing when the column has at least this
+# many commits; otherwise it just adds noise above short bars.
+ANNOTATION_MIN_COMMITS = 30
 
 
 @dataclass(frozen=True)
@@ -41,11 +85,11 @@ def parse_args() -> RenderConfig:
     parser = argparse.ArgumentParser()
     parser.add_argument("--aggregate", required=True)
     parser.add_argument("--output", required=True)
-    parser.add_argument("--width", type=int, default=760)
-    parser.add_argument("--height", type=int, default=500)
+    parser.add_argument("--width", type=int, default=880)
+    parser.add_argument("--height", type=int, default=660)
     args = parser.parse_args()
-    if args.width < 320:
-        raise ValueError("--width must be at least 320")
+    if args.width < 480:
+        raise ValueError("--width must be at least 480")
     if args.height < 360:
         raise ValueError("--height must be at least 360")
     return RenderConfig(
@@ -62,161 +106,468 @@ def load_aggregate(*, path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def text_element(
+def last_12_month_keys(*, monthly_counts: dict[str, Any]) -> list[str]:
+    """Return the 12 most recent month keys present in the aggregate."""
+
+    keys = sorted(monthly_counts.keys())
+    return keys[-12:] if len(keys) >= 12 else keys
+
+
+def lighten(*, hex_color: str, amount: float) -> str:
+    """Lighten a hex color toward white by ``amount`` in [0, 1]."""
+
+    body = hex_color.lstrip("#")
+    r = int(body[0:2], 16)
+    g = int(body[2:4], 16)
+    b = int(body[4:6], 16)
+    nr = int(r + (255 - r) * amount)
+    ng = int(g + (255 - g) * amount)
+    nb = int(b + (255 - b) * amount)
+    return f"#{nr:02x}{ng:02x}{nb:02x}"
+
+
+def text_node(
     *,
-    x: int,
-    y: int,
-    text: str,
+    x: float,
+    y: float,
+    content: str,
     size: int,
     weight: int = 400,
-    fill: str = "#24292f",
+    fill: str = "#1f2328",
+    anchor: str = "start",
 ) -> str:
-    """Return an escaped SVG text element."""
+    """Return an SVG text element with escaped content."""
 
-    escaped_text = html.escape(text)
+    safe = html.escape(content)
     return (
-        f'<text x="{x}" y="{y}" font-family="Inter, ui-sans-serif, '
-        f'system-ui, -apple-system, Segoe UI, sans-serif" font-size="{size}" '
-        f'font-weight="{weight}" fill="{fill}">{escaped_text}</text>'
+        f'<text x="{x:.2f}" y="{y:.2f}" font-family="{FONT_STACK}" '
+        f'font-size="{size}" font-weight="{weight}" fill="{fill}" '
+        f'text-anchor="{anchor}">{safe}</text>'
     )
 
 
-def bar_row(
+def make_gradients(*, themes: list[dict[str, Any]]) -> str:
+    """Build linear gradients (lighter at top, base color at bottom)."""
+
+    parts = ["<defs>"]
+    for theme in themes:
+        tid = theme["id"]
+        color = theme["color"]
+        top = lighten(hex_color=color, amount=0.22)
+        parts.append(
+            f'<linearGradient id="g_{tid}" x1="0" y1="0" x2="0" y2="1">'
+            f'<stop offset="0%" stop-color="{top}"/>'
+            f'<stop offset="100%" stop-color="{color}"/>'
+            "</linearGradient>"
+        )
+    parts.append("</defs>")
+    return "\n".join(parts)
+
+
+def dominant_theme(*, column_data: dict[str, int]) -> str | None:
+    """Return the theme id with the highest count in the column, or ``None``."""
+
+    candidates = [
+        (tid, column_data.get(tid, 0))
+        for tid in THEME_ORDER
+        if column_data.get(tid, 0) > 0
+    ]
+    if not candidates:
+        return None
+    candidates.sort(key=lambda item: item[1], reverse=True)
+    return candidates[0][0]
+
+
+def render_chart(
     *,
-    x: int,
-    y: int,
-    width: int,
-    label_width: int,
-    label: str,
-    count: int,
-    total: int,
-    color: str,
+    months: list[str],
+    monthly_counts: dict[str, dict[str, int]],
+    themes_by_id: dict[str, dict[str, Any]],
+    chart_x: float,
+    chart_y: float,
+    chart_w: float,
+    chart_h: float,
 ) -> str:
-    """Render one horizontal category bar with count and percentage."""
+    """Render the stacked column chart body for the supplied months."""
 
-    bar_x = x + label_width
-    bar_width = max(4, round((width - label_width - 92) * count / total))
-    pct = f"{count / total * 100:.1f}%"
-    return "\n".join(
-        [
-            text_element(x=x, y=y + 14, text=label, size=17, weight=600),
-            (
-                f'<rect x="{bar_x}" y="{y}" width="{width - label_width - 92}" '
-                f'height="16" rx="4" fill="#eef2f7" />'
-            ),
-            (
-                f'<rect x="{bar_x}" y="{y}" width="{bar_width}" '
-                f'height="16" rx="4" fill="{color}" />'
-            ),
-            text_element(
-                x=bar_x + width - label_width - 78,
-                y=y + 14,
-                text=f"{count} · {pct}",
-                size=15,
-                fill="#57606a",
-            ),
-        ]
-    )
-
-
-def monthly_strip(
-    *,
-    aggregate: dict[str, Any],
-    x: int,
-    y: int,
-    width: int,
-    categories: list[dict[str, Any]],
-) -> str:
-    """Render a 12-month activity strip colored by dominant topic."""
-
-    months = sorted(aggregate["monthly_counts"].keys())[-12:]
-    if len(months) == 0:
+    parts: list[str] = []
+    if not months:
         return ""
 
-    color_by_id = {category["id"]: category["color"] for category in categories}
-    cell_gap = 5
-    cell_width = max(10, (width - cell_gap * (len(months) - 1)) // len(months))
-    pieces = [
-        text_element(
-            x=x,
-            y=y - 12,
-            text="Recent 12-month dominant topic strip",
-            size=15,
-            weight=600,
-            fill="#57606a",
-        )
+    col_gap = 8.0
+    col_w = (chart_w - col_gap * (len(months) - 1)) / len(months)
+
+    monthly_totals = [
+        sum(monthly_counts.get(month, {}).get(tid, 0) for tid in THEME_ORDER)
+        for month in months
     ]
-    max_count = max(
-        sum(aggregate["monthly_counts"][month].values()) for month in months
-    )
-    for index, month in enumerate(months):
-        counts = aggregate["monthly_counts"][month]
-        dominant = max(counts.items(), key=lambda item: item[1])[0]
-        opacity = 0.35 + 0.65 * sum(counts.values()) / max_count
-        cell_x = x + index * (cell_width + cell_gap)
-        pieces.append(
-            f'<rect x="{cell_x}" y="{y}" width="{cell_width}" height="28" '
-            f'rx="5" fill="{color_by_id[dominant]}" opacity="{opacity:.2f}">'
-            f'<title>{html.escape(month)} · {sum(counts.values())} commits</title>'
-            "</rect>"
+    max_total = max(monthly_totals + [1])
+    # Round axis maximum up to nearest 50 so gridlines land on tidy numbers.
+    y_max = max(50, ((max_total + 49) // 50) * 50)
+
+    # Y-axis dashed gridlines and labels.
+    n_ticks = 5
+    for tick in range(n_ticks + 1):
+        val = (y_max * tick) // n_ticks
+        y_line = chart_y + chart_h - (chart_h * tick) / n_ticks
+        parts.append(
+            f'<line x1="{chart_x:.2f}" y1="{y_line:.2f}" '
+            f'x2="{chart_x + chart_w:.2f}" y2="{y_line:.2f}" '
+            'stroke="#d0d7de" stroke-dasharray="2 3" stroke-width="0.5"/>'
         )
-    return "\n".join(pieces)
-
-
-def render_svg(*, aggregate: dict[str, Any], width: int, height: int) -> str:
-    """Render the complete SVG document from aggregate data."""
-
-    categories = aggregate["categories"][:8]
-    total = aggregate["total_commits"]
-    body_width = width - 64
-    rows = []
-    start_y = 128
-    for index, category in enumerate(categories):
-        rows.append(
-            bar_row(
-                x=32,
-                y=start_y + index * 38,
-                width=body_width,
-                label_width=250,
-                label=category["label"],
-                count=category["count"],
-                total=total,
-                color=category["color"],
+        parts.append(
+            text_node(
+                x=chart_x - 8,
+                y=y_line + 3,
+                content=f"{val}",
+                size=10,
+                fill="#656d76",
+                anchor="end",
             )
         )
 
-    strip_y = start_y + len(categories) * 38 + 32
-    subtitle = (
-        f"{total:,} commits · {aggregate['public_repo_count']} public repos · "
-        f"{aggregate['private_repo_count']} private repos"
-    )
-    privacy_note = "Raw private messages stay local; chart uses aggregate counts."
+    for col_idx, month_key in enumerate(months):
+        x_pos = chart_x + col_idx * (col_w + col_gap)
+        col_data = monthly_counts.get(month_key, {})
+        col_total = sum(col_data.get(tid, 0) for tid in THEME_ORDER)
 
-    svg_parts = [
+        # Year transition marker on the calendar year boundary.
+        if col_idx > 0:
+            prev_year = int(months[col_idx - 1][:4])
+            curr_year = int(month_key[:4])
+            if curr_year != prev_year:
+                marker_x = x_pos - col_gap / 2
+                parts.append(
+                    f'<line x1="{marker_x:.2f}" y1="{chart_y - 8:.2f}" '
+                    f'x2="{marker_x:.2f}" y2="{chart_y + chart_h + 12:.2f}" '
+                    'stroke="#8c959f" stroke-dasharray="3 3" '
+                    'stroke-width="0.6" opacity="0.55"/>'
+                )
+
+        # Stack segments bottom-up using THEME_ORDER.
+        segments = []
+        for tid in THEME_ORDER:
+            count = col_data.get(tid, 0)
+            if count == 0:
+                continue
+            seg_h = (count / y_max) * chart_h
+            segments.append((tid, count, seg_h))
+
+        y_pos = chart_y + chart_h
+        for seg_idx, (tid, count, seg_h) in enumerate(segments):
+            y_pos -= seg_h
+            is_top = seg_idx == len(segments) - 1
+            radius = 3 if (is_top and seg_h >= 6) else 0
+            theme_label = themes_by_id.get(tid, {}).get("label", tid)
+            tooltip = html.escape(
+                f"{theme_label}: {count} commits in {month_key}"
+            )
+
+            if radius > 0:
+                # Path with rounded top corners only.
+                parts.append(
+                    f'<path d="M{x_pos:.2f},{y_pos + seg_h:.2f} '
+                    f'L{x_pos:.2f},{y_pos + radius:.2f} '
+                    f'Q{x_pos:.2f},{y_pos:.2f} '
+                    f'{x_pos + radius:.2f},{y_pos:.2f} '
+                    f'L{x_pos + col_w - radius:.2f},{y_pos:.2f} '
+                    f'Q{x_pos + col_w:.2f},{y_pos:.2f} '
+                    f'{x_pos + col_w:.2f},{y_pos + radius:.2f} '
+                    f'L{x_pos + col_w:.2f},{y_pos + seg_h:.2f} Z" '
+                    f'fill="url(#g_{tid})">'
+                    f"<title>{tooltip}</title></path>"
+                )
+            else:
+                parts.append(
+                    f'<rect x="{x_pos:.2f}" y="{y_pos:.2f}" '
+                    f'width="{col_w:.2f}" height="{seg_h:.2f}" '
+                    f'fill="url(#g_{tid})">'
+                    f"<title>{tooltip}</title></rect>"
+                )
+
+        # Dominant-theme annotation above tall enough columns; total count
+        # immediately above that.
+        if col_total > 0:
+            top_y = chart_y + chart_h - (col_total / y_max) * chart_h - 4
+            parts.append(
+                text_node(
+                    x=x_pos + col_w / 2,
+                    y=top_y,
+                    content=f"{col_total}",
+                    size=10,
+                    fill="#1f2328",
+                    weight=600,
+                    anchor="middle",
+                )
+            )
+            if col_total >= ANNOTATION_MIN_COMMITS:
+                top_theme = dominant_theme(column_data=col_data)
+                if top_theme is not None:
+                    label = THEME_SHORT_LABEL.get(top_theme, top_theme)
+                    theme_color = themes_by_id.get(top_theme, {}).get(
+                        "color", "#656d76"
+                    )
+                    parts.append(
+                        text_node(
+                            x=x_pos + col_w / 2,
+                            y=top_y - 12,
+                            content=label,
+                            size=9,
+                            fill=theme_color,
+                            weight=600,
+                            anchor="middle",
+                        )
+                    )
+
+        # X-axis: 3-letter month abbreviation.
+        month_num = int(month_key[5:7])
+        parts.append(
+            text_node(
+                x=x_pos + col_w / 2,
+                y=chart_y + chart_h + 18,
+                content=MONTH_ABBREV[month_num - 1],
+                size=11,
+                fill="#1f2328",
+                weight=500,
+                anchor="middle",
+            )
+        )
+        # Year tag on the first column and on January.
+        if col_idx == 0 or month_num == 1:
+            parts.append(
+                text_node(
+                    x=x_pos + col_w / 2,
+                    y=chart_y + chart_h + 32,
+                    content=f"'{month_key[2:4]}",
+                    size=9,
+                    fill="#8c959f",
+                    anchor="middle",
+                )
+            )
+
+    # Baseline.
+    parts.append(
+        f'<line x1="{chart_x:.2f}" y1="{chart_y + chart_h:.2f}" '
+        f'x2="{chart_x + chart_w:.2f}" y2="{chart_y + chart_h:.2f}" '
+        'stroke="#1f2328" stroke-width="1"/>'
+    )
+
+    return "\n".join(parts)
+
+
+def render_legend(
+    *,
+    months: list[str],
+    monthly_counts: dict[str, dict[str, int]],
+    themes_by_id: dict[str, dict[str, Any]],
+    legend_x: float,
+    legend_y: float,
+    legend_w: float,
+    total_window: int,
+) -> str:
+    """Render a two-column legend with per-theme sparklines and counts."""
+
+    parts: list[str] = []
+    rows_per_col = (len(THEME_ORDER) + 1) // 2
+    col_w = (legend_w - 32) / 2
+    row_h = 30
+
+    # Sparkline dimensions: large enough to read trend at a glance.
+    spark_w = 110.0
+    spark_h = 22.0
+    count_text_w = 70.0
+
+    for idx, tid in enumerate(THEME_ORDER):
+        theme = themes_by_id.get(tid)
+        if theme is None:
+            continue
+        col_idx = idx // rows_per_col
+        row_idx = idx % rows_per_col
+        x = legend_x + col_idx * (col_w + 32)
+        y = legend_y + row_idx * row_h
+
+        window_count = sum(
+            monthly_counts.get(month, {}).get(tid, 0) for month in months
+        )
+        share = window_count / total_window * 100 if total_window else 0
+        color = theme["color"]
+        label = theme["label"]
+
+        # Swatch (offset to vertically center against the row text).
+        parts.append(
+            f'<rect x="{x:.2f}" y="{y + 8:.2f}" width="12" height="12" '
+            f'rx="2.5" fill="{color}"/>'
+        )
+        # Theme label.
+        parts.append(
+            text_node(
+                x=x + 20,
+                y=y + 18,
+                content=label,
+                size=11,
+                fill="#1f2328",
+                weight=600,
+            )
+        )
+
+        # Sparkline track (faint baseline rectangle so empty months read as
+        # "no activity" rather than ambiguity).
+        spark_x = x + col_w - spark_w - count_text_w
+        spark_y = y + 4
+        parts.append(
+            f'<rect x="{spark_x:.2f}" y="{spark_y + spark_h - 1:.2f}" '
+            f'width="{spark_w:.2f}" height="1" fill="#d0d7de"/>'
+        )
+
+        # Sparkline bars.
+        spark_values = [
+            monthly_counts.get(month, {}).get(tid, 0) for month in months
+        ]
+        spark_max = max(spark_values + [1])
+        bar_gap = 1.5
+        bar_w = max(
+            1.0,
+            (spark_w - bar_gap * (len(months) - 1)) / max(len(months), 1),
+        )
+        for j, value in enumerate(spark_values):
+            bar_height = (value / spark_max) * spark_h if spark_max else 0
+            bar_x = spark_x + j * (bar_w + bar_gap)
+            bar_y_pos = spark_y + spark_h - bar_height
+            parts.append(
+                f'<rect x="{bar_x:.2f}" y="{bar_y_pos:.2f}" '
+                f'width="{bar_w:.2f}" height="{bar_height:.2f}" '
+                f'fill="{color}" opacity="0.9"/>'
+            )
+
+        # Count and percentage right-aligned.
+        parts.append(
+            text_node(
+                x=x + col_w,
+                y=y + 18,
+                content=f"{window_count} · {share:.0f}%",
+                size=11,
+                fill="#656d76",
+                anchor="end",
+            )
+        )
+
+    return "\n".join(parts)
+
+
+def render_svg(
+    *,
+    aggregate: dict[str, Any],
+    width: int,
+    height: int,
+) -> str:
+    """Render the complete SVG document from aggregate data."""
+
+    themes_by_id = {
+        category["id"]: category for category in aggregate["categories"]
+    }
+    monthly_counts = aggregate.get("monthly_counts", {})
+    months = last_12_month_keys(monthly_counts=monthly_counts)
+    total_window = sum(
+        sum(monthly_counts.get(month, {}).get(tid, 0) for tid in THEME_ORDER)
+        for month in months
+    )
+    total_all = aggregate.get("total_commits", 0)
+    repo_count = (
+        aggregate.get("public_repo_count", 0)
+        + aggregate.get("private_repo_count", 0)
+    )
+
+    chart_x = 64.0
+    chart_y = 116.0
+    chart_w = float(width) - chart_x - 32
+    chart_h = 280.0
+    legend_x = chart_x
+    legend_y = chart_y + chart_h + 68
+    legend_w = chart_w
+
+    theme_dicts = [
+        themes_by_id[tid] for tid in THEME_ORDER if tid in themes_by_id
+    ]
+
+    title_y = 52
+    subtitle_y = 76
+
+    parts: list[str] = [
         (
             f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" '
             f'height="{height}" viewBox="0 0 {width} {height}" role="img" '
-            f'aria-label="Commit topic map">'
+            'aria-label="Monthly commit themes over the past 12 months">'
         ),
-        '<rect width="100%" height="100%" rx="18" fill="#ffffff" />',
-        (
-            f'<rect x="1" y="1" width="{width - 2}" height="{height - 2}" '
-            f'rx="18" fill="none" stroke="#d0d7de" />'
+        '<rect width="100%" height="100%" fill="#ffffff"/>',
+        make_gradients(themes=theme_dicts),
+        # Title block (left).
+        text_node(
+            x=chart_x,
+            y=title_y,
+            content="What I shipped — past 12 months",
+            size=22,
+            weight=700,
+            fill="#1f2328",
         ),
-        text_element(x=32, y=48, text="Commit Topic Map", size=30, weight=800),
-        text_element(x=32, y=78, text=subtitle, size=17, fill="#57606a"),
-        text_element(x=32, y=104, text=privacy_note, size=14, fill="#6e7781"),
-        "\n".join(rows),
-        monthly_strip(
-            aggregate=aggregate,
-            x=32,
-            y=strip_y,
-            width=body_width,
-            categories=aggregate["categories"],
+        text_node(
+            x=chart_x,
+            y=subtitle_y,
+            content=(
+                f"Across {repo_count} owned repos · 10 working themes · "
+                "merge commits excluded · regenerated deterministically"
+            ),
+            size=12,
+            fill="#656d76",
+        ),
+        # Big headline number (right side of title block).
+        text_node(
+            x=float(width) - 32,
+            y=title_y + 4,
+            content=f"{total_window:,}",
+            size=36,
+            weight=800,
+            fill="#1f2328",
+            anchor="end",
+        ),
+        text_node(
+            x=float(width) - 32,
+            y=subtitle_y,
+            content="commits this year",
+            size=11,
+            fill="#656d76",
+            anchor="end",
+        ),
+        render_chart(
+            months=months,
+            monthly_counts=monthly_counts,
+            themes_by_id=themes_by_id,
+            chart_x=chart_x,
+            chart_y=chart_y,
+            chart_w=chart_w,
+            chart_h=chart_h,
+        ),
+        render_legend(
+            months=months,
+            monthly_counts=monthly_counts,
+            themes_by_id=themes_by_id,
+            legend_x=legend_x,
+            legend_y=legend_y,
+            legend_w=legend_w,
+            total_window=total_window,
+        ),
+        text_node(
+            x=chart_x,
+            y=height - 14,
+            content=(
+                f"All-time corpus: {total_all:,} non-merge commits "
+                "since first owned repo. Private repo names redacted."
+            ),
+            size=10,
+            fill="#8c959f",
         ),
         "</svg>",
     ]
-    return "\n".join(svg_parts)
+    return "\n".join(parts)
 
 
 def write_svg(*, output_path: Path, svg: str) -> None:
@@ -227,14 +578,12 @@ def write_svg(*, output_path: Path, svg: str) -> None:
 
 
 def main() -> None:
-    """Load aggregate data and render the SVG."""
+    """Load aggregate data and render the monthly stacked-column SVG."""
 
     config = parse_args()
     aggregate = load_aggregate(path=config.aggregate_path)
     svg = render_svg(
-        aggregate=aggregate,
-        width=config.width,
-        height=config.height,
+        aggregate=aggregate, width=config.width, height=config.height
     )
     write_svg(output_path=config.output_path, svg=svg)
     print(f"rendered {config.output_path}")

@@ -1,78 +1,224 @@
 {
-  "schema_version": 1,
-  "derived_from": "Exploration of 1833 owned non-fork default-branch commits on 2026-05-11 UTC.",
+  "schema_version": 2,
+  "derived_from": "Exploration of 1833 owned non-fork default-branch commits on 2026-05-11 UTC, regrouped by working domain rather than commit verb.",
   "privacy_note": "Private repository names are used only in ignored local taxonomy files; the committed taxonomy redacts private repo priors.",
   "repo_weight": 5,
   "keyword_weight": 1,
+  "skip_merge_commits": true,
   "categories": [
     {
-      "id": "knowledge-writing",
-      "label": "Knowledge & Writing",
-      "color": "#2f6f9f",
-      "repos": ["paper-hub"],
-      "keywords": ["note", "notes", "interview", "howtousellm", "q-learning", "paper", "archive", "daily radar", "digest", "writing"]
-    },
-    {
-      "id": "quant-research",
-      "label": "Quant Research Infra",
-      "color": "#9a6b00",
-      "repos": ["RBT", "RBT_RL"],
-      "keywords": ["backtest", "backtesting", "optuna", "rolling", "alpha", "mcs", "strategy", "strategies", "crypto", "funding", "coingecko", "sleeve"]
-    },
-    {
-      "id": "agent-workflows",
-      "label": "Agent Workflows",
+      "id": "agent-orchestration",
+      "label": "Agent Orchestration",
       "color": "#6f42c1",
       "repos": ["coding-workflow", "acceptance-agent"],
-      "keywords": ["agent", "agents", "claude", "codex", "workflow", "workflows", "acceptance", "review", "merge-readiness", "pr assistant", "claude-code-review"]
+      "keywords": [
+        "claude code", "claude-code", "claude_code",
+        "codex",
+        "sync pass", "sync-pass", "sync_pass",
+        "sync workflow",
+        "dispatch", "dispatcher", "dispatch-tdd",
+        "tdd", "ready-for-review", "ready for review",
+        "acceptance",
+        "multi-agent", "multi_agent",
+        "claude action", "claude-action",
+        "claude-code-review", "claude code review",
+        "pr assistant", "pr-assistant",
+        "constitution-suggestion", "constitution suggestion",
+        "工作流", "工作流模型", "工作流架构",
+        "分层调度", "调度工作流",
+        "代理", "智能体",
+        "drift trigger", "drift-trigger",
+        "bilingual workflow"
+      ]
+    },
+    {
+      "id": "llm-eval-contracts",
+      "label": "LLM Eval & Contracts",
+      "color": "#bf3989",
+      "repos": [],
+      "keywords": [
+        "capability contract", "capability-contract",
+        "runtime contract", "runtime-contract",
+        "contract alias", "alias boundary",
+        "contract token", "token vocabulary",
+        "merge-readiness", "merge_readiness", "merge readiness",
+        "doctor status", "doctor severity",
+        "verdict validation", "verdict",
+        "smoke validation", "smoke workflow",
+        "evaluation", "评测", "eval gate",
+        "audit contract", "post-audit", "audit loop",
+        "agent-first", "agent first",
+        "review automation",
+        "capability gate", "test gate",
+        "契约",
+        "审查意见"
+      ]
+    },
+    {
+      "id": "quant-optuna",
+      "label": "Quant Strategy & Optuna",
+      "color": "#1a7f37",
+      "repos": [],
+      "keywords": [
+        "optuna",
+        "hyperparameter", "hyperparam",
+        "overfit", "overfit guardrail", "overfit guardrails",
+        "guardrail", "guardrails",
+        "p1d_none", "p1d none",
+        "benchmark contract", "benchmark contracts", "benchmark 与窗口",
+        "performance payload", "performance contract", "performance contracts",
+        "hot path", "hot-path",
+        "rolling task", "rolling tasks",
+        "batch-run", "batch contract", "batch contracts",
+        "profiler evidence",
+        "template reuse", "模板复用",
+        "sunday batch", "batch cooldown",
+        "策略", "调参",
+        "shared config contract"
+      ]
+    },
+    {
+      "id": "live-trading",
+      "label": "Live Trading Ops",
+      "color": "#2da44e",
+      "repos": [],
+      "keywords": [
+        "allocate", "allocate orchestration", "allocate startup", "allocate monitoring", "allocate post-run",
+        "monitor correlation", "monitor dashboard", "monitoring dashboard",
+        "ccxt", "trading_box", "trading bot",
+        "future_trading", "futures trading",
+        "live trading", "live-trading", "实盘",
+        "publish contract",
+        "correlation dashboard",
+        "graceful stop", "stop integration",
+        "send_log_to_tele", "telegram",
+        "optuna tail", "tail cleanup"
+      ]
+    },
+    {
+      "id": "backtest-mcs",
+      "label": "Backtest & MCS Research",
+      "color": "#bf8700",
+      "repos": ["RBT", "RBT_RL"],
+      "keywords": [
+        "backtest", "backtesting", "回测",
+        "mcs ", " mcs", "model confidence set",
+        "block length", "block bootstrap", "block-bootstrap",
+        "alpha参数", "alpha 参数", "alpha parameter",
+        "26-week", "26 week",
+        "live backtest",
+        "报告生成", "报告生成全流程", "report generation",
+        "regime",
+        "diagnostic", "diagnostics",
+        "funding source", "funding-source", "funding sources",
+        "coingecko",
+        "sleeve",
+        "数据层", "data layer"
+      ]
+    },
+    {
+      "id": "timeseries-ml",
+      "label": "Time-Series ML",
+      "color": "#1b7c83",
+      "repos": [],
+      "keywords": [
+        "crossformer", "crossformer_sm", "crossformersm",
+        "dthelper", "dt_helper", "dt helper",
+        "reader",
+        "m5_first_only", "m5 model", "m5_",
+        "models_yy", "model_yy",
+        "stride",
+        "hourly calendar", "小时制",
+        "虚拟货币", "crypto calendar",
+        "time series model", "time-series model"
+      ]
     },
     {
       "id": "semantic-dax",
-      "label": "NL->DAX & Semantic Models",
-      "color": "#0b7a75",
+      "label": "Semantic Model & DAX",
+      "color": "#0969da",
       "repos": ["Process_SemanticModel"],
-      "keywords": ["nl2dax", "dax", "semantic", "power bi", "fabric", "measure", "selectcolumns", "token", "runtime", "contract", "flow"]
+      "keywords": [
+        "dax", "dax runner", "dax measure",
+        "semantic model", "semantic-model", "语义模型",
+        "power bi", "powerbi", "fabric",
+        "measure", "selectcolumns",
+        "datetimevalue", "date conversion", "time anchor",
+        "csat", "critical satisfaction",
+        "query contract", "query-contract", "error-layering", "error layering",
+        "flow detail", "flow browser", "flow contracts",
+        "strict parser",
+        "insight.md", "insight",
+        "json serialization", "json 序列化", "时间序列化",
+        "blank members"
+      ]
     },
     {
-      "id": "static-analysis",
-      "label": "Static Analysis Tools",
-      "color": "#8b3a3a",
+      "id": "data-pipeline",
+      "label": "Data Pipeline & Schema",
+      "color": "#218bff",
+      "repos": [],
+      "keywords": [
+        "field profile", "field profiling", "field-profile", "profile kernel", "profiling kernel",
+        "schema refresh", "schema-refresh", "schema automation",
+        "duplicate scanner", "duplicate-scanner", "dedupe",
+        "heuristic fallback",
+        "shared llm runner", "llm runner",
+        "shared helpers",
+        "cors", "control add",
+        "rag", "retrieval-augmented",
+        "vector store", "embedding store",
+        "pipeline",
+        "transform",
+        "replay",
+        "azure", "openai api",
+        "utc helper", "utc-helper"
+      ]
+    },
+    {
+      "id": "ast-tooling",
+      "label": "AST & Code Tooling",
+      "color": "#bc4c00",
       "repos": ["PySymphony"],
-      "keywords": ["ast", "astauditor", "static", "symbol", "scope", "merge", "advanced_merge", "import", "refactor"]
+      "keywords": [
+        "ast", "astauditor", "ast auditor", "ast-auditor",
+        "advanced_merge", "advanced-merge", "advanced merge",
+        "scope-aware", "scope aware", "作用域感知", "作用域",
+        "auto-fix", "auto fix",
+        "undefined symbol", "undefined symbols",
+        "循环依赖", "circular dependency",
+        "static check", "static-check", "static auditor", "静态检查",
+        "import reinjection", "import 重注入",
+        "dependency order", "dependency ordering",
+        "symbol resolution"
+      ]
     },
     {
-      "id": "publishing-platform",
-      "label": "Publishing Platform",
-      "color": "#2f7d32",
-      "repos": ["hugo-blog-theme", "wlvh"],
-      "keywords": ["hugo", "blog", "diary", "seo", "sitemap", "cloudflare", "profile", "readme", "thumbnail", "analytics"]
-    },
-    {
-      "id": "data-product-infra",
-      "label": "Data/Product Infra",
-      "color": "#1f6feb",
-      "repos": [],
-      "keywords": ["api", "backend", "rag", "browser", "interface", "pipeline", "transform", "replay", "azure", "openai", "cors"]
-    },
-    {
-      "id": "quality-delivery",
-      "label": "Quality & Delivery",
-      "color": "#bf3989",
-      "repos": [],
-      "keywords": ["test", "tests", "testing", "ci", "github actions", "smoke", "fix", "bug", "harden", "regression", "security", "utf-8"]
-    },
-    {
-      "id": "repo-hygiene",
-      "label": "Repo Hygiene",
-      "color": "#666666",
-      "repos": ["hello-world"],
-      "keywords": ["delete", "cleanup", "clean up", "gitignore", "license", "rename", "remove", "initial commit", "add files via upload"]
+      "id": "content-methodology",
+      "label": "Content & Methodology",
+      "color": "#57606a",
+      "repos": ["paper-hub", "huaweidata-site", "hugo-blog-theme", "wlvh"],
+      "keywords": [
+        "howtousellm", "how to use llm",
+        "daily radar", "daily-radar",
+        "ai magazine", "editor's desk", "editor desk",
+        "mdx article", "mdx workflow", "article workflow",
+        "diary",
+        "笔记", "paper", "papers", "research digest",
+        "bilingual site", "bilingual workflow",
+        "blog", "hugo theme",
+        "seo signals", "sitemap", "search indexing",
+        "claude.md", "agents.md", "agents manifesto",
+        "governance", "governance docs",
+        "writing",
+        "turnstile", "comment moderation"
+      ]
     },
     {
       "id": "other",
-      "label": "Mixed / Other",
+      "label": "Other",
       "color": "#8c8c8c",
-      "repos": [],
+      "repos": ["hello-world"],
       "keywords": []
     }
   ]

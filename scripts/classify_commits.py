@@ -146,8 +146,16 @@ def classify_rows(
     rows: list[dict[str, Any]],
     taxonomy: dict[str, Any],
 ) -> list[dict[str, Any]]:
-    """Classify every commit row using the same taxonomy version."""
+    """Classify every commit row using the same taxonomy version.
 
+    When the taxonomy sets ``skip_merge_commits`` true, rows where
+    ``is_merge`` is true are dropped before classification so that the
+    aggregate counts reflect actual work rather than merge bookkeeping.
+    """
+
+    skip_merges = bool(taxonomy.get("skip_merge_commits", False))
+    if skip_merges:
+        rows = [row for row in rows if not row.get("is_merge", False)]
     return [classify_row(row=row, taxonomy=taxonomy) for row in rows]
 
 

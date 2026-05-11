@@ -1,278 +1,317 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-05-11T08:07:22.723973+00:00",
+  "generated_at_utc": "2026-05-11T08:44:58.718373+00:00",
   "scope": "owned non-fork default branches; private commit messages aggregated only",
-  "taxonomy_note": "Private repository names are used only in ignored local taxonomy files; the committed taxonomy redacts private repo priors.",
+  "taxonomy_note": "Private repository names appear only in this ignored local taxonomy; the committed taxonomy redacts private repo priors.",
   "raw_messages_committed": false,
-  "total_commits": 1833,
-  "public_commits": 360,
-  "private_commits": 1473,
+  "total_commits": 1673,
+  "public_commits": 303,
+  "private_commits": 1370,
   "public_repo_count": 10,
   "private_repo_count": 17,
   "categories": [
     {
-      "id": "knowledge-writing",
-      "label": "Knowledge & Writing",
-      "color": "#2f6f9f",
-      "count": 533,
-      "share": 0.2908
+      "id": "content-methodology",
+      "label": "Content & Methodology",
+      "color": "#57606a",
+      "count": 632,
+      "share": 0.3778
     },
     {
-      "id": "quant-research",
-      "label": "Quant Research Infra",
-      "color": "#9a6b00",
-      "count": 527,
-      "share": 0.2875
+      "id": "quant-optuna",
+      "label": "Quant Strategy & Optuna",
+      "color": "#1a7f37",
+      "count": 321,
+      "share": 0.1919
+    },
+    {
+      "id": "agent-orchestration",
+      "label": "Agent Orchestration",
+      "color": "#6f42c1",
+      "count": 218,
+      "share": 0.1303
     },
     {
       "id": "semantic-dax",
-      "label": "NL->DAX & Semantic Models",
-      "color": "#0b7a75",
-      "count": 265,
-      "share": 0.1446
+      "label": "Semantic Model & DAX",
+      "color": "#0969da",
+      "count": 155,
+      "share": 0.0926
     },
     {
-      "id": "agent-workflows",
-      "label": "Agent Workflows",
-      "color": "#6f42c1",
-      "count": 236,
-      "share": 0.1288
+      "id": "backtest-mcs",
+      "label": "Backtest & MCS Research",
+      "color": "#bf8700",
+      "count": 110,
+      "share": 0.0658
     },
     {
-      "id": "data-product-infra",
-      "label": "Data/Product Infra",
-      "color": "#1f6feb",
-      "count": 104,
-      "share": 0.0567
+      "id": "data-pipeline",
+      "label": "Data Pipeline & Schema",
+      "color": "#218bff",
+      "count": 81,
+      "share": 0.0484
     },
     {
-      "id": "publishing-platform",
-      "label": "Publishing Platform",
-      "color": "#2f7d32",
-      "count": 89,
-      "share": 0.0486
+      "id": "ast-tooling",
+      "label": "AST & Code Tooling",
+      "color": "#bc4c00",
+      "count": 52,
+      "share": 0.0311
     },
     {
-      "id": "static-analysis",
-      "label": "Static Analysis Tools",
-      "color": "#8b3a3a",
-      "count": 76,
-      "share": 0.0415
+      "id": "timeseries-ml",
+      "label": "Time-Series ML",
+      "color": "#1b7c83",
+      "count": 42,
+      "share": 0.0251
     },
     {
-      "id": "repo-hygiene",
-      "label": "Repo Hygiene",
-      "color": "#666666",
-      "count": 3,
-      "share": 0.0016
+      "id": "live-trading",
+      "label": "Live Trading Ops",
+      "color": "#2da44e",
+      "count": 37,
+      "share": 0.0221
+    },
+    {
+      "id": "llm-eval-contracts",
+      "label": "LLM Eval & Contracts",
+      "color": "#bf3989",
+      "count": 23,
+      "share": 0.0137
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "color": "#8c8c8c",
+      "count": 2,
+      "share": 0.0012
     }
   ],
   "monthly_counts": {
     "2017-07": {
-      "repo-hygiene": 3
+      "other": 2
     },
     "2020-08": {
-      "publishing-platform": 11
+      "content-methodology": 11
     },
     "2020-09": {
-      "publishing-platform": 1
+      "content-methodology": 1
     },
     "2020-10": {
-      "publishing-platform": 1
+      "content-methodology": 1
     },
     "2020-11": {
-      "publishing-platform": 3
+      "content-methodology": 3
     },
     "2021-02": {
-      "publishing-platform": 2
+      "content-methodology": 2
     },
     "2021-05": {
-      "publishing-platform": 2
+      "content-methodology": 2
     },
     "2021-08": {
-      "publishing-platform": 9
+      "content-methodology": 9
     },
     "2021-10": {
-      "publishing-platform": 9
+      "content-methodology": 9
     },
     "2021-11": {
-      "publishing-platform": 2
+      "content-methodology": 2
     },
     "2021-12": {
-      "publishing-platform": 1
+      "content-methodology": 1
     },
     "2022-02": {
-      "publishing-platform": 8
+      "content-methodology": 8
     },
     "2022-03": {
-      "publishing-platform": 4
+      "content-methodology": 4
     },
     "2022-04": {
-      "publishing-platform": 3
+      "content-methodology": 3
     },
     "2022-05": {
-      "publishing-platform": 1
+      "content-methodology": 1
     },
     "2022-06": {
-      "publishing-platform": 1
+      "content-methodology": 1
     },
     "2022-07": {
-      "publishing-platform": 1
+      "content-methodology": 1
     },
     "2022-08": {
-      "publishing-platform": 3
+      "content-methodology": 3
     },
     "2022-09": {
-      "publishing-platform": 2
+      "content-methodology": 2
     },
     "2023-05": {
-      "quant-research": 34
+      "quant-optuna": 34
     },
     "2023-06": {
-      "quant-research": 15
+      "quant-optuna": 15
     },
     "2023-07": {
-      "quant-research": 7,
-      "knowledge-writing": 74
+      "quant-optuna": 7,
+      "content-methodology": 74
     },
     "2023-08": {
-      "knowledge-writing": 25,
-      "quant-research": 9
+      "content-methodology": 25,
+      "quant-optuna": 9
     },
     "2023-09": {
-      "knowledge-writing": 28,
-      "quant-research": 2
+      "content-methodology": 28,
+      "quant-optuna": 2
     },
     "2023-10": {
-      "knowledge-writing": 57,
-      "quant-research": 5
+      "content-methodology": 57,
+      "backtest-mcs": 4,
+      "quant-optuna": 1
     },
     "2023-11": {
-      "knowledge-writing": 36,
-      "quant-research": 13
+      "content-methodology": 36,
+      "backtest-mcs": 13
     },
     "2023-12": {
-      "knowledge-writing": 9,
-      "quant-research": 1
+      "content-methodology": 9,
+      "quant-optuna": 1
     },
     "2024-01": {
-      "knowledge-writing": 4
+      "content-methodology": 4
     },
     "2024-02": {
-      "knowledge-writing": 10
+      "content-methodology": 10
     },
     "2024-03": {
-      "quant-research": 1
+      "quant-optuna": 1
     },
     "2024-04": {
-      "knowledge-writing": 11,
-      "quant-research": 5
+      "content-methodology": 11,
+      "quant-optuna": 5
     },
     "2024-05": {
-      "knowledge-writing": 7,
-      "quant-research": 8
+      "content-methodology": 7,
+      "quant-optuna": 8
     },
     "2024-06": {
-      "quant-research": 18,
-      "knowledge-writing": 7
+      "quant-optuna": 8,
+      "content-methodology": 7,
+      "backtest-mcs": 10
     },
     "2024-07": {
-      "quant-research": 6
+      "quant-optuna": 6
     },
     "2024-08": {
-      "quant-research": 17
+      "backtest-mcs": 9,
+      "quant-optuna": 8
     },
     "2024-09": {
-      "quant-research": 14,
-      "knowledge-writing": 16
+      "quant-optuna": 3,
+      "content-methodology": 16,
+      "backtest-mcs": 11
     },
     "2024-10": {
-      "quant-research": 13,
-      "knowledge-writing": 47
+      "backtest-mcs": 10,
+      "quant-optuna": 2,
+      "live-trading": 1,
+      "content-methodology": 47
     },
     "2024-11": {
-      "quant-research": 3,
-      "knowledge-writing": 37,
-      "data-product-infra": 11
+      "backtest-mcs": 2,
+      "content-methodology": 37,
+      "data-pipeline": 10,
+      "quant-optuna": 1
     },
     "2024-12": {
-      "data-product-infra": 2
+      "data-pipeline": 1
     },
     "2025-01": {
-      "knowledge-writing": 5,
-      "data-product-infra": 3
+      "content-methodology": 5,
+      "data-pipeline": 3
     },
     "2025-03": {
-      "quant-research": 6,
-      "knowledge-writing": 3
+      "quant-optuna": 5,
+      "content-methodology": 3
     },
     "2025-04": {
-      "knowledge-writing": 70,
-      "quant-research": 6
+      "content-methodology": 70,
+      "quant-optuna": 6
     },
     "2025-05": {
-      "quant-research": 14,
-      "knowledge-writing": 8,
-      "data-product-infra": 7
+      "quant-optuna": 10,
+      "content-methodology": 10,
+      "agent-orchestration": 5,
+      "live-trading": 2,
+      "backtest-mcs": 2
     },
     "2025-06": {
-      "data-product-infra": 10,
-      "knowledge-writing": 47,
-      "quant-research": 3,
-      "agent-workflows": 53
+      "content-methodology": 56,
+      "agent-orchestration": 54,
+      "quant-optuna": 3
     },
     "2025-07": {
-      "agent-workflows": 75,
-      "knowledge-writing": 3,
-      "static-analysis": 76,
-      "quant-research": 95
+      "agent-orchestration": 65,
+      "content-methodology": 3,
+      "ast-tooling": 52,
+      "quant-optuna": 40,
+      "backtest-mcs": 1,
+      "live-trading": 20,
+      "timeseries-ml": 29
     },
     "2025-08": {
-      "quant-research": 98
+      "quant-optuna": 83,
+      "live-trading": 4,
+      "timeseries-ml": 8
     },
     "2025-09": {
-      "quant-research": 18,
-      "data-product-infra": 21
+      "live-trading": 2,
+      "quant-optuna": 14,
+      "data-pipeline": 17
     },
     "2025-10": {
-      "quant-research": 46,
-      "data-product-infra": 50,
-      "semantic-dax": 44
+      "quant-optuna": 1,
+      "backtest-mcs": 37,
+      "data-pipeline": 50,
+      "semantic-dax": 25,
+      "timeseries-ml": 5
     },
     "2025-11": {
-      "semantic-dax": 60,
-      "quant-research": 5
+      "semantic-dax": 50,
+      "backtest-mcs": 4
     },
     "2025-12": {
-      "semantic-dax": 26,
-      "quant-research": 8,
-      "agent-workflows": 10
+      "semantic-dax": 17,
+      "backtest-mcs": 6,
+      "agent-orchestration": 8
     },
     "2026-01": {
-      "semantic-dax": 46,
-      "quant-research": 5
+      "semantic-dax": 32,
+      "quant-optuna": 5
     },
     "2026-02": {
-      "semantic-dax": 12,
-      "quant-research": 16
+      "semantic-dax": 9,
+      "quant-optuna": 16
     },
     "2026-03": {
-      "semantic-dax": 42,
-      "quant-research": 17,
-      "agent-workflows": 29
+      "semantic-dax": 22,
+      "llm-eval-contracts": 5,
+      "quant-optuna": 17,
+      "agent-orchestration": 29
     },
     "2026-04": {
-      "quant-research": 16,
-      "agent-workflows": 52,
-      "semantic-dax": 32,
-      "knowledge-writing": 25
+      "quant-optuna": 8,
+      "agent-orchestration": 47,
+      "live-trading": 8,
+      "llm-eval-contracts": 16,
+      "content-methodology": 24
     },
     "2026-05": {
-      "agent-workflows": 17,
-      "quant-research": 3,
-      "semantic-dax": 3,
-      "knowledge-writing": 4,
-      "publishing-platform": 25
+      "agent-orchestration": 10,
+      "quant-optuna": 2,
+      "llm-eval-contracts": 2,
+      "content-methodology": 29,
+      "backtest-mcs": 1
     }
   }
 }
