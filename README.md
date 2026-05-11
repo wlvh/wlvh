@@ -11,6 +11,7 @@ Current focus: agent evaluation, code-review automation, NL->DAX workflows, quan
 | [acceptance-agent](https://github.com/wlvh/acceptance-agent) | Spec-visible, implementation-blind verification for multi-agent coding workflows. |
 | [coding-workflow](https://github.com/wlvh/coding-workflow) | Bilingual workflow contracts, PR review templates, and sync automation for AI-assisted development. |
 | [PySymphony](https://github.com/wlvh/PySymphony) | AST-aware Python code merging with static auditing, dependency ordering, import reinjection, and adversarial tests. |
+| [Process_SemanticModel](https://github.com/wlvh/Process_SemanticModel) | Power BI/Fabric semantic model documentation with DAX metadata, relationship checks, and data-health profiling. |
 | [RBT](https://github.com/wlvh/RBT) | NumPy/Numba backtesting with switchable strategies and state preservation across regime changes. |
 | [RBT_RL](https://github.com/wlvh/RBT_RL) | RL-driven financial decision-chain dataset and agent-selection experiments for RBT workflows. |
 | [paper-hub](https://github.com/wlvh/paper-hub) | GitHub Issues + Actions workflow for paper notes, research digests, and AI-assisted recommendations. |
