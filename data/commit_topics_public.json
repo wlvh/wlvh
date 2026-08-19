@@ -1,91 +1,91 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-05-11T09:09:17.786713+00:00",
+  "generated_at_utc": "2026-08-19T12:15:43.681207+00:00",
   "scope": "owned non-fork default branches; private commit messages aggregated only",
-  "taxonomy_note": "Private repository names appear only in this ignored local taxonomy; the committed taxonomy redacts private repo priors.",
+  "taxonomy_note": "Private repository names are used only in ignored local taxonomy files; the committed taxonomy redacts private repo priors.",
   "raw_messages_committed": false,
-  "total_commits": 1673,
-  "public_commits": 303,
-  "private_commits": 1370,
-  "public_repo_count": 10,
+  "total_commits": 1939,
+  "public_commits": 448,
+  "private_commits": 1491,
+  "public_repo_count": 13,
   "private_repo_count": 17,
   "categories": [
     {
       "id": "content-methodology",
       "label": "Content & Methodology",
       "color": "#57606a",
-      "count": 632,
-      "share": 0.3778
+      "count": 697,
+      "share": 0.3595
     },
     {
       "id": "quant-optuna",
       "label": "Quant Strategy & Optuna",
       "color": "#1a7f37",
       "count": 321,
-      "share": 0.1919
+      "share": 0.1655
     },
     {
       "id": "agent-orchestration",
       "label": "Agent Orchestration",
       "color": "#6f42c1",
-      "count": 218,
-      "share": 0.1303
+      "count": 277,
+      "share": 0.1429
     },
     {
       "id": "semantic-dax",
       "label": "Semantic Model & DAX",
       "color": "#0969da",
-      "count": 155,
-      "share": 0.0926
+      "count": 185,
+      "share": 0.0954
     },
     {
       "id": "backtest-mcs",
       "label": "Backtest & MCS Research",
       "color": "#bf8700",
       "count": 110,
-      "share": 0.0658
+      "share": 0.0567
     },
     {
       "id": "data-pipeline",
       "label": "Data Pipeline & Schema",
       "color": "#218bff",
-      "count": 81,
-      "share": 0.0484
-    },
-    {
-      "id": "ast-tooling",
-      "label": "AST & Code Tooling",
-      "color": "#bc4c00",
-      "count": 52,
-      "share": 0.0311
-    },
-    {
-      "id": "timeseries-ml",
-      "label": "Time-Series ML",
-      "color": "#1b7c83",
-      "count": 42,
-      "share": 0.0251
-    },
-    {
-      "id": "live-trading",
-      "label": "Live Trading Ops",
-      "color": "#2da44e",
-      "count": 37,
-      "share": 0.0221
+      "count": 103,
+      "share": 0.0531
     },
     {
       "id": "llm-eval-contracts",
       "label": "LLM Eval & Contracts",
       "color": "#bf3989",
-      "count": 23,
-      "share": 0.0137
+      "count": 84,
+      "share": 0.0433
+    },
+    {
+      "id": "ast-tooling",
+      "label": "AST & Code Tooling",
+      "color": "#bc4c00",
+      "count": 59,
+      "share": 0.0304
+    },
+    {
+      "id": "timeseries-ml",
+      "label": "Time-Series ML",
+      "color": "#1b7c83",
+      "count": 44,
+      "share": 0.0227
+    },
+    {
+      "id": "live-trading",
+      "label": "Live Trading Ops",
+      "color": "#2da44e",
+      "count": 34,
+      "share": 0.0175
     },
     {
       "id": "other",
       "label": "Other",
       "color": "#8c8c8c",
-      "count": 2,
-      "share": 0.0012
+      "count": 25,
+      "share": 0.0129
     }
   ],
   "monthly_counts": {
@@ -240,23 +240,24 @@
     },
     "2025-05": {
       "quant-optuna": 10,
-      "content-methodology": 10,
-      "agent-orchestration": 5,
+      "content-methodology": 8,
+      "other": 7,
       "live-trading": 2,
       "backtest-mcs": 2
     },
     "2025-06": {
-      "content-methodology": 56,
-      "agent-orchestration": 54,
-      "quant-optuna": 3
+      "other": 10,
+      "content-methodology": 47,
+      "quant-optuna": 3,
+      "agent-orchestration": 53
     },
     "2025-07": {
-      "agent-orchestration": 65,
+      "agent-orchestration": 68,
       "content-methodology": 3,
       "ast-tooling": 52,
       "quant-optuna": 40,
       "backtest-mcs": 1,
-      "live-trading": 20,
+      "live-trading": 17,
       "timeseries-ml": 29
     },
     "2025-08": {
@@ -272,7 +273,8 @@
     "2025-10": {
       "quant-optuna": 1,
       "backtest-mcs": 37,
-      "data-pipeline": 50,
+      "other": 1,
+      "data-pipeline": 49,
       "semantic-dax": 25,
       "timeseries-ml": 5
     },
@@ -283,7 +285,8 @@
     "2025-12": {
       "semantic-dax": 17,
       "backtest-mcs": 6,
-      "agent-orchestration": 8
+      "other": 5,
+      "agent-orchestration": 3
     },
     "2026-01": {
       "semantic-dax": 32,
@@ -294,137 +297,45 @@
       "quant-optuna": 16
     },
     "2026-03": {
-      "semantic-dax": 22,
-      "llm-eval-contracts": 5,
+      "semantic-dax": 27,
       "quant-optuna": 17,
       "agent-orchestration": 29
     },
     "2026-04": {
       "quant-optuna": 8,
-      "agent-orchestration": 47,
+      "agent-orchestration": 71,
       "live-trading": 8,
-      "llm-eval-contracts": 16,
-      "content-methodology": 24
+      "semantic-dax": 11,
+      "llm-eval-contracts": 5
     },
     "2026-05": {
-      "agent-orchestration": 10,
+      "agent-orchestration": 14,
       "quant-optuna": 2,
-      "llm-eval-contracts": 2,
-      "content-methodology": 29,
-      "backtest-mcs": 1
+      "semantic-dax": 3,
+      "content-methodology": 59,
+      "backtest-mcs": 1,
+      "ast-tooling": 7
+    },
+    "2026-06": {
+      "agent-orchestration": 4,
+      "content-methodology": 68,
+      "timeseries-ml": 2,
+      "semantic-dax": 5,
+      "data-pipeline": 22
+    },
+    "2026-07": {
+      "data-pipeline": 1,
+      "semantic-dax": 6,
+      "content-methodology": 2,
+      "llm-eval-contracts": 30,
+      "agent-orchestration": 26
+    },
+    "2026-08": {
+      "llm-eval-contracts": 49,
+      "agent-orchestration": 9
     }
   },
   "bucket_samples": {
-    "2025-06": {
-      "content-methodology": {
-        "public_count": 0,
-        "private_count": 56,
-        "public_samples": []
-      },
-      "agent-orchestration": {
-        "public_count": 0,
-        "private_count": 54,
-        "public_samples": []
-      },
-      "quant-optuna": {
-        "public_count": 0,
-        "private_count": 3,
-        "public_samples": []
-      }
-    },
-    "2025-07": {
-      "agent-orchestration": {
-        "public_count": 0,
-        "private_count": 65,
-        "public_samples": []
-      },
-      "content-methodology": {
-        "public_count": 3,
-        "private_count": 0,
-        "public_samples": [
-          {
-            "repo": "paper-hub",
-            "subject": "Initial commit"
-          },
-          {
-            "repo": "paper-hub",
-            "subject": "Update README.md"
-          },
-          {
-            "repo": "paper-hub",
-            "subject": "Update README.md"
-          }
-        ]
-      },
-      "ast-tooling": {
-        "public_count": 52,
-        "private_count": 0,
-        "public_samples": [
-          {
-            "repo": "PySymphony",
-            "subject": "fix: 修复Issue #37 - 合并脚本静态审计失败问题"
-          },
-          {
-            "repo": "PySymphony",
-            "subject": "fix: 解决 Issue #39 - ASTAuditor 对合法 Python 语法的误报问题"
-          },
-          {
-            "repo": "PySymphony",
-            "subject": "fix: 修复 Issue #41 中的四个核心架构缺陷"
-          },
-          {
-            "repo": "PySymphony",
-            "subject": "fix: 修复符号 scope 为 None 时的 AttributeError"
-          },
-          {
-            "repo": "PySymphony",
-            "subject": "fix: 修复 advanced_merge.py 的多个关键问题"
-          }
-        ]
-      },
-      "quant-optuna": {
-        "public_count": 0,
-        "private_count": 40,
-        "public_samples": []
-      },
-      "backtest-mcs": {
-        "public_count": 1,
-        "private_count": 0,
-        "public_samples": [
-          {
-            "repo": "RBT_RL",
-            "subject": "feat: 应用旧版本的简洁设计理念到新版本"
-          }
-        ]
-      },
-      "live-trading": {
-        "public_count": 0,
-        "private_count": 20,
-        "public_samples": []
-      },
-      "timeseries-ml": {
-        "public_count": 0,
-        "private_count": 29,
-        "public_samples": []
-      }
-    },
-    "2025-08": {
-      "quant-optuna": {
-        "public_count": 0,
-        "private_count": 83,
-        "public_samples": []
-      },
-      "live-trading": {
-        "public_count": 0,
-        "private_count": 4,
-        "public_samples": []
-      },
-      "timeseries-ml": {
-        "public_count": 0,
-        "private_count": 8,
-        "public_samples": []
-      }
-    },
     "2025-09": {
       "live-trading": {
         "public_count": 0,
@@ -455,7 +366,7 @@
       },
       "data-pipeline": {
         "public_count": 0,
-        "private_count": 50,
+        "private_count": 49,
         "public_samples": []
       },
       "semantic-dax": {
@@ -532,7 +443,7 @@
       },
       "agent-orchestration": {
         "public_count": 0,
-        "private_count": 8,
+        "private_count": 3,
         "public_samples": []
       }
     },
@@ -563,12 +474,7 @@
     "2026-03": {
       "semantic-dax": {
         "public_count": 0,
-        "private_count": 22,
-        "public_samples": []
-      },
-      "llm-eval-contracts": {
-        "public_count": 0,
-        "private_count": 5,
+        "private_count": 27,
         "public_samples": []
       },
       "quant-optuna": {
@@ -611,7 +517,7 @@
       },
       "agent-orchestration": {
         "public_count": 47,
-        "private_count": 0,
+        "private_count": 24,
         "public_samples": [
           {
             "repo": "coding-workflow",
@@ -640,26 +546,22 @@
         "private_count": 8,
         "public_samples": []
       },
-      "llm-eval-contracts": {
+      "semantic-dax": {
         "public_count": 0,
-        "private_count": 16,
+        "private_count": 11,
         "public_samples": []
       },
-      "content-methodology": {
+      "llm-eval-contracts": {
         "public_count": 0,
-        "private_count": 24,
+        "private_count": 5,
         "public_samples": []
       }
     },
     "2026-05": {
       "agent-orchestration": {
-        "public_count": 10,
-        "private_count": 0,
+        "public_count": 11,
+        "private_count": 3,
         "public_samples": [
-          {
-            "repo": "coding-workflow",
-            "subject": "Update TESTING.md"
-          },
           {
             "repo": "coding-workflow",
             "subject": "add bilingual workflow sync paths"
@@ -675,6 +577,10 @@
           {
             "repo": "acceptance-agent",
             "subject": "Create acceptance agent companion artifact"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "Update README.md"
           }
         ]
       },
@@ -683,30 +589,34 @@
         "private_count": 2,
         "public_samples": []
       },
-      "llm-eval-contracts": {
+      "semantic-dax": {
         "public_count": 0,
-        "private_count": 2,
+        "private_count": 3,
         "public_samples": []
       },
       "content-methodology": {
-        "public_count": 4,
-        "private_count": 25,
+        "public_count": 9,
+        "private_count": 50,
         "public_samples": [
           {
             "repo": "wlvh",
-            "subject": "Add profile README"
+            "subject": "Add commit topic map to profile"
           },
           {
             "repo": "wlvh",
-            "subject": "Fix essay title punctuation"
+            "subject": "Switch profile chart to ten domain themes + monthly stacks"
           },
           {
             "repo": "wlvh",
-            "subject": "Expand profile README with public evidence map"
+            "subject": "Add public commit subjects to stacked-column tooltips"
           },
           {
             "repo": "wlvh",
-            "subject": "Add semantic model work to profile"
+            "subject": "Publish interactive chart via GitHub Pages"
+          },
+          {
+            "repo": "wlvh",
+            "subject": "Inline the SVG in index.html and add a JS tooltip handler"
           }
         ]
       },
@@ -717,6 +627,217 @@
           {
             "repo": "RBT",
             "subject": "Clarify non-commercial license terms"
+          }
+        ]
+      },
+      "ast-tooling": {
+        "public_count": 7,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "PySymphony",
+            "subject": "Update notebook.md"
+          },
+          {
+            "repo": "PySymphony",
+            "subject": "Update notebook.md"
+          },
+          {
+            "repo": "PySymphony",
+            "subject": "Add files via upload"
+          },
+          {
+            "repo": "PySymphony",
+            "subject": "Update notebook_fast_v3.md"
+          },
+          {
+            "repo": "PySymphony",
+            "subject": "Update notebook_fast_v3.md"
+          }
+        ]
+      }
+    },
+    "2026-06": {
+      "agent-orchestration": {
+        "public_count": 0,
+        "private_count": 4,
+        "public_samples": []
+      },
+      "content-methodology": {
+        "public_count": 0,
+        "private_count": 68,
+        "public_samples": []
+      },
+      "timeseries-ml": {
+        "public_count": 2,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "longterm-renewable-power-forecasting",
+            "subject": "Add forecasting scripts and reading guide"
+          },
+          {
+            "repo": "longterm-renewable-power-forecasting",
+            "subject": "Rewrite README in English"
+          }
+        ]
+      },
+      "semantic-dax": {
+        "public_count": 0,
+        "private_count": 5,
+        "public_samples": []
+      },
+      "data-pipeline": {
+        "public_count": 22,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "AlphaVantage",
+            "subject": "docs: archive Step 0 exploration README and link it from project overview"
+          },
+          {
+            "repo": "AlphaVantage",
+            "subject": "Create SEC_research.md"
+          },
+          {
+            "repo": "AlphaVantage",
+            "subject": "Update SEC_research.md"
+          },
+          {
+            "repo": "AlphaVantage",
+            "subject": "Update SEC_research.md"
+          },
+          {
+            "repo": "AlphaVantage",
+            "subject": "Add files via upload"
+          }
+        ]
+      }
+    },
+    "2026-07": {
+      "data-pipeline": {
+        "public_count": 1,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "AlphaVantage",
+            "subject": "Add files via upload"
+          }
+        ]
+      },
+      "semantic-dax": {
+        "public_count": 0,
+        "private_count": 6,
+        "public_samples": []
+      },
+      "content-methodology": {
+        "public_count": 0,
+        "private_count": 2,
+        "public_samples": []
+      },
+      "llm-eval-contracts": {
+        "public_count": 30,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "SEC_metrics",
+            "subject": "Publish repaired validation baseline"
+          },
+          {
+            "repo": "SEC_metrics",
+            "subject": "feat: add auditable vNext recorded shadow"
+          },
+          {
+            "repo": "SEC_metrics",
+            "subject": "fix: bind vNext projection to complete verified batches"
+          },
+          {
+            "repo": "SEC_metrics",
+            "subject": "test: record committed vNext acceptance"
+          },
+          {
+            "repo": "SEC_metrics",
+            "subject": "test: publish final PR acceptance evidence"
+          }
+        ]
+      },
+      "agent-orchestration": {
+        "public_count": 19,
+        "private_count": 7,
+        "public_samples": [
+          {
+            "repo": "coding-workflow",
+            "subject": "Update TESTING.md"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "Simplify workflow docs sync around direct risk coverage"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "Update README.md"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "Update README.md"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "Update README.md"
+          }
+        ]
+      }
+    },
+    "2026-08": {
+      "llm-eval-contracts": {
+        "public_count": 49,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "SEC_metrics",
+            "subject": "docs(vnext): record qualified live balance blocker"
+          },
+          {
+            "repo": "SEC_metrics",
+            "subject": "feat(vnext): establish Issue #15 authority snapshot"
+          },
+          {
+            "repo": "SEC_metrics",
+            "subject": "fix(vnext): close Issue #15 authority evidence"
+          },
+          {
+            "repo": "SEC_metrics",
+            "subject": "fix(vnext): derive legacy helper scopes from call graph"
+          },
+          {
+            "repo": "SEC_metrics",
+            "subject": "fix(vnext): restore complete producer record anchors"
+          }
+        ]
+      },
+      "agent-orchestration": {
+        "public_count": 9,
+        "private_count": 0,
+        "public_samples": [
+          {
+            "repo": "coding-workflow",
+            "subject": "Clarify installer frontmatter preflight"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "Validate frontmatter delimiter lines"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "docs: clarify first installation and usage"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "docs: make workflow sync one-command"
+          },
+          {
+            "repo": "coding-workflow",
+            "subject": "docs: fix onboarding and worktree proof"
           }
         ]
       }

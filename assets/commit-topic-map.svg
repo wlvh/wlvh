@@ -13,98 +13,52 @@
 <linearGradient id="g_content-methodology" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7b828a"/><stop offset="100%" stop-color="#57606a"/></linearGradient>
 </defs>
 <text x="64.00" y="52.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#1f2328" text-anchor="start">What I shipped — past 12 months</text>
-<text x="64.00" y="76.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#656d76" text-anchor="start">Across 27 owned repos · 10 working themes · merge commits excluded · regenerated deterministically</text>
-<text x="848.00" y="56.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="36" font-weight="800" fill="#1f2328" text-anchor="end">936</text>
+<text x="64.00" y="76.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#656d76" text-anchor="start">Across 30 owned repos · 10 working themes · merge commits excluded · regenerated deterministically</text>
+<text x="848.00" y="56.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="36" font-weight="800" fill="#1f2328" text-anchor="end">778</text>
 <text x="848.00" y="76.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">commits this year</text>
 <line x1="64.00" y1="396.00" x2="848.00" y2="396.00" stroke="#d0d7de" stroke-dasharray="2 3" stroke-width="0.5"/>
 <text x="56.00" y="399.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#656d76" text-anchor="end">0</text>
 <line x1="64.00" y1="340.00" x2="848.00" y2="340.00" stroke="#d0d7de" stroke-dasharray="2 3" stroke-width="0.5"/>
-<text x="56.00" y="343.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#656d76" text-anchor="end">50</text>
+<text x="56.00" y="343.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#656d76" text-anchor="end">30</text>
 <line x1="64.00" y1="284.00" x2="848.00" y2="284.00" stroke="#d0d7de" stroke-dasharray="2 3" stroke-width="0.5"/>
-<text x="56.00" y="287.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#656d76" text-anchor="end">100</text>
+<text x="56.00" y="287.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#656d76" text-anchor="end">60</text>
 <line x1="64.00" y1="228.00" x2="848.00" y2="228.00" stroke="#d0d7de" stroke-dasharray="2 3" stroke-width="0.5"/>
-<text x="56.00" y="231.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#656d76" text-anchor="end">150</text>
+<text x="56.00" y="231.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#656d76" text-anchor="end">90</text>
 <line x1="64.00" y1="172.00" x2="848.00" y2="172.00" stroke="#d0d7de" stroke-dasharray="2 3" stroke-width="0.5"/>
-<text x="56.00" y="175.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#656d76" text-anchor="end">200</text>
+<text x="56.00" y="175.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#656d76" text-anchor="end">120</text>
 <line x1="64.00" y1="116.00" x2="848.00" y2="116.00" stroke="#d0d7de" stroke-dasharray="2 3" stroke-width="0.5"/>
-<text x="56.00" y="119.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#656d76" text-anchor="end">250</text>
-<rect x="64.00" y="335.52" width="58.00" height="60.48" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 54 in Jun 2025
-Private (54)</title></rect>
-<rect x="64.00" y="332.16" width="58.00" height="3.36" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 3 in Jun 2025
-Private (3)</title></rect>
-<path d="M64.00,332.16 L64.00,272.44 Q64.00,269.44 67.00,269.44 L119.00,269.44 Q122.00,269.44 122.00,272.44 L122.00,332.16 Z" fill="url(#g_content-methodology)"><title>Content &amp; Methodology · 56 in Jun 2025
-Private (56)</title></path>
-<text x="93.00" y="265.44" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">113</text>
-<text x="93.00" y="253.44" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#57606a" text-anchor="middle">Content</text>
-<text x="93.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Jun</text>
-<text x="93.00" y="428.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8c959f" text-anchor="middle">&#x27;25</text>
-<rect x="130.00" y="323.20" width="58.00" height="72.80" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 65 in Jul 2025
-Private (65)</title></rect>
-<rect x="130.00" y="278.40" width="58.00" height="44.80" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 40 in Jul 2025
-Private (40)</title></rect>
-<rect x="130.00" y="256.00" width="58.00" height="22.40" fill="url(#g_live-trading)"><title>Live Trading Ops · 20 in Jul 2025
-Private (20)</title></rect>
-<rect x="130.00" y="254.88" width="58.00" height="1.12" fill="url(#g_backtest-mcs)"><title>Backtest &amp; MCS Research · 1 in Jul 2025
-
-Public (1):
-• RBT_RL — feat: 应用旧版本的简洁设计理念到新版本</title></rect>
-<rect x="130.00" y="222.40" width="58.00" height="32.48" fill="url(#g_timeseries-ml)"><title>Time-Series ML · 29 in Jul 2025
-Private (29)</title></rect>
-<rect x="130.00" y="164.16" width="58.00" height="58.24" fill="url(#g_ast-tooling)"><title>AST &amp; Code Tooling · 52 in Jul 2025
-
-Public (52):
-• PySymphony — fix: 修复 Issue #41 中的四个核心架构缺陷
-• PySymphony — fix: 修复符号 scope 为 None 时的 AttributeError
-• PySymphony — fix: 修复 advanced_merge.py 的多个关键问题
-… and 49 more public</title></rect>
-<rect x="130.00" y="160.80" width="58.00" height="3.36" fill="url(#g_content-methodology)"><title>Content &amp; Methodology · 3 in Jul 2025
-
-Public (3):
-• paper-hub — Initial commit
-• paper-hub — Update README.md
-• paper-hub — Update README.md</title></rect>
-<text x="159.00" y="156.80" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">210</text>
-<text x="159.00" y="144.80" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#6f42c1" text-anchor="middle">Agent</text>
-<text x="159.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Jul</text>
-<rect x="196.00" y="303.04" width="58.00" height="92.96" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 83 in Aug 2025
-Private (83)</title></rect>
-<rect x="196.00" y="298.56" width="58.00" height="4.48" fill="url(#g_live-trading)"><title>Live Trading Ops · 4 in Aug 2025
-Private (4)</title></rect>
-<path d="M196.00,298.56 L196.00,292.60 Q196.00,289.60 199.00,289.60 L251.00,289.60 Q254.00,289.60 254.00,292.60 L254.00,298.56 Z" fill="url(#g_timeseries-ml)"><title>Time-Series ML · 8 in Aug 2025
-Private (8)</title></path>
-<text x="225.00" y="285.60" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">95</text>
-<text x="225.00" y="273.60" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#1a7f37" text-anchor="middle">Quant</text>
-<text x="225.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Aug</text>
-<rect x="262.00" y="380.32" width="58.00" height="15.68" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 14 in Sep 2025
+<text x="56.00" y="119.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#656d76" text-anchor="end">150</text>
+<rect x="64.00" y="369.87" width="58.00" height="26.13" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 14 in Sep 2025
 Private (14)</title></rect>
-<rect x="262.00" y="378.08" width="58.00" height="2.24" fill="url(#g_live-trading)"><title>Live Trading Ops · 2 in Sep 2025
+<rect x="64.00" y="366.13" width="58.00" height="3.73" fill="url(#g_live-trading)"><title>Live Trading Ops · 2 in Sep 2025
 Private (2)</title></rect>
-<path d="M262.00,378.08 L262.00,362.04 Q262.00,359.04 265.00,359.04 L317.00,359.04 Q320.00,359.04 320.00,362.04 L320.00,378.08 Z" fill="url(#g_data-pipeline)"><title>Data Pipeline &amp; Schema · 17 in Sep 2025
+<path d="M64.00,366.13 L64.00,337.40 Q64.00,334.40 67.00,334.40 L119.00,334.40 Q122.00,334.40 122.00,337.40 L122.00,366.13 Z" fill="url(#g_data-pipeline)"><title>Data Pipeline &amp; Schema · 17 in Sep 2025
 Private (17)</title></path>
-<text x="291.00" y="355.04" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">33</text>
-<text x="291.00" y="343.04" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#218bff" text-anchor="middle">Data</text>
-<text x="291.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Sep</text>
-<rect x="328.00" y="394.88" width="58.00" height="1.12" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 1 in Oct 2025
+<text x="93.00" y="330.40" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">33</text>
+<text x="93.00" y="318.40" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#218bff" text-anchor="middle">Data</text>
+<text x="93.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Sep</text>
+<text x="93.00" y="428.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8c959f" text-anchor="middle">&#x27;25</text>
+<rect x="130.00" y="394.13" width="58.00" height="1.87" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 1 in Oct 2025
 Private (1)</title></rect>
-<rect x="328.00" y="353.44" width="58.00" height="41.44" fill="url(#g_backtest-mcs)"><title>Backtest &amp; MCS Research · 37 in Oct 2025
+<rect x="130.00" y="325.07" width="58.00" height="69.07" fill="url(#g_backtest-mcs)"><title>Backtest &amp; MCS Research · 37 in Oct 2025
 Private (37)</title></rect>
-<rect x="328.00" y="347.84" width="58.00" height="5.60" fill="url(#g_timeseries-ml)"><title>Time-Series ML · 5 in Oct 2025
+<rect x="130.00" y="315.73" width="58.00" height="9.33" fill="url(#g_timeseries-ml)"><title>Time-Series ML · 5 in Oct 2025
 Private (5)</title></rect>
-<rect x="328.00" y="319.84" width="58.00" height="28.00" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 25 in Oct 2025
+<rect x="130.00" y="269.07" width="58.00" height="46.67" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 25 in Oct 2025
 
 Public (25):
 • Process_SemanticModel — Create insight.md
 • Process_SemanticModel — Update insight.md
 • Process_SemanticModel — Update insight.md
 … and 22 more public</title></rect>
-<path d="M328.00,319.84 L328.00,266.84 Q328.00,263.84 331.00,263.84 L383.00,263.84 Q386.00,263.84 386.00,266.84 L386.00,319.84 Z" fill="url(#g_data-pipeline)"><title>Data Pipeline &amp; Schema · 50 in Oct 2025
-Private (50)</title></path>
-<text x="357.00" y="259.84" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">118</text>
-<text x="357.00" y="247.84" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#218bff" text-anchor="middle">Data</text>
-<text x="357.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Oct</text>
-<rect x="394.00" y="391.52" width="58.00" height="4.48" fill="url(#g_backtest-mcs)"><title>Backtest &amp; MCS Research · 4 in Nov 2025
+<path d="M130.00,269.07 L130.00,180.60 Q130.00,177.60 133.00,177.60 L185.00,177.60 Q188.00,177.60 188.00,180.60 L188.00,269.07 Z" fill="url(#g_data-pipeline)"><title>Data Pipeline &amp; Schema · 49 in Oct 2025
+Private (49)</title></path>
+<text x="159.00" y="173.60" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">117</text>
+<text x="159.00" y="161.60" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#218bff" text-anchor="middle">Data</text>
+<text x="159.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Oct</text>
+<rect x="196.00" y="388.53" width="58.00" height="7.47" fill="url(#g_backtest-mcs)"><title>Backtest &amp; MCS Research · 4 in Nov 2025
 Private (4)</title></rect>
-<path d="M394.00,391.52 L394.00,338.52 Q394.00,335.52 397.00,335.52 L449.00,335.52 Q452.00,335.52 452.00,338.52 L452.00,391.52 Z" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 50 in Nov 2025
+<path d="M196.00,388.53 L196.00,298.20 Q196.00,295.20 199.00,295.20 L251.00,295.20 Q254.00,295.20 254.00,298.20 L254.00,388.53 Z" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 50 in Nov 2025
 
 Public (4):
 • Process_SemanticModel — Update insight.md
@@ -113,111 +67,184 @@ Public (4):
 … and 1 more public
 
 Private (46)</title></path>
-<text x="423.00" y="331.52" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">54</text>
-<text x="423.00" y="319.52" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#0969da" text-anchor="middle">Semantic</text>
-<text x="423.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Nov</text>
-<rect x="460.00" y="387.04" width="58.00" height="8.96" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 8 in Dec 2025
-Private (8)</title></rect>
-<rect x="460.00" y="380.32" width="58.00" height="6.72" fill="url(#g_backtest-mcs)"><title>Backtest &amp; MCS Research · 6 in Dec 2025
+<text x="225.00" y="291.20" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">54</text>
+<text x="225.00" y="279.20" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#0969da" text-anchor="middle">Semantic</text>
+<text x="225.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Nov</text>
+<rect x="262.00" y="390.40" width="58.00" height="5.60" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 3 in Dec 2025
+Private (3)</title></rect>
+<rect x="262.00" y="379.20" width="58.00" height="11.20" fill="url(#g_backtest-mcs)"><title>Backtest &amp; MCS Research · 6 in Dec 2025
 Private (6)</title></rect>
-<path d="M460.00,380.32 L460.00,364.28 Q460.00,361.28 463.00,361.28 L515.00,361.28 Q518.00,361.28 518.00,364.28 L518.00,380.32 Z" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 17 in Dec 2025
+<path d="M262.00,379.20 L262.00,350.47 Q262.00,347.47 265.00,347.47 L317.00,347.47 Q320.00,347.47 320.00,350.47 L320.00,379.20 Z" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 17 in Dec 2025
 Private (17)</title></path>
-<text x="489.00" y="357.28" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">31</text>
-<text x="489.00" y="345.28" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#0969da" text-anchor="middle">Semantic</text>
-<text x="489.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Dec</text>
-<line x1="522.00" y1="108.00" x2="522.00" y2="408.00" stroke="#8c959f" stroke-dasharray="3 3" stroke-width="0.6" opacity="0.55"/>
-<rect x="526.00" y="390.40" width="58.00" height="5.60" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 5 in Jan 2026
+<text x="291.00" y="343.47" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">26</text>
+<text x="291.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Dec</text>
+<line x1="324.00" y1="108.00" x2="324.00" y2="408.00" stroke="#8c959f" stroke-dasharray="3 3" stroke-width="0.6" opacity="0.55"/>
+<rect x="328.00" y="386.67" width="58.00" height="9.33" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 5 in Jan 2026
 Private (5)</title></rect>
-<path d="M526.00,390.40 L526.00,357.56 Q526.00,354.56 529.00,354.56 L581.00,354.56 Q584.00,354.56 584.00,357.56 L584.00,390.40 Z" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 32 in Jan 2026
+<path d="M328.00,386.67 L328.00,329.93 Q328.00,326.93 331.00,326.93 L383.00,326.93 Q386.00,326.93 386.00,329.93 L386.00,386.67 Z" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 32 in Jan 2026
 Private (32)</title></path>
-<text x="555.00" y="350.56" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">37</text>
-<text x="555.00" y="338.56" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#0969da" text-anchor="middle">Semantic</text>
-<text x="555.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Jan</text>
-<text x="555.00" y="428.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8c959f" text-anchor="middle">&#x27;26</text>
-<rect x="592.00" y="378.08" width="58.00" height="17.92" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 16 in Feb 2026
+<text x="357.00" y="322.93" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">37</text>
+<text x="357.00" y="310.93" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#0969da" text-anchor="middle">Semantic</text>
+<text x="357.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Jan</text>
+<text x="357.00" y="428.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8c959f" text-anchor="middle">&#x27;26</text>
+<rect x="394.00" y="366.13" width="58.00" height="29.87" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 16 in Feb 2026
 Private (16)</title></rect>
-<path d="M592.00,378.08 L592.00,371.00 Q592.00,368.00 595.00,368.00 L647.00,368.00 Q650.00,368.00 650.00,371.00 L650.00,378.08 Z" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 9 in Feb 2026
+<path d="M394.00,366.13 L394.00,352.33 Q394.00,349.33 397.00,349.33 L449.00,349.33 Q452.00,349.33 452.00,352.33 L452.00,366.13 Z" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 9 in Feb 2026
 Private (9)</title></path>
-<text x="621.00" y="364.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">25</text>
-<text x="621.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Feb</text>
-<rect x="658.00" y="363.52" width="58.00" height="32.48" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 29 in Mar 2026
+<text x="423.00" y="345.33" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">25</text>
+<text x="423.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Feb</text>
+<rect x="460.00" y="341.87" width="58.00" height="54.13" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 29 in Mar 2026
 
 Public (29):
 • coding-workflow — Update README.md
 • coding-workflow — Update TESTING.md
 • coding-workflow — Delete language and format guidelines section
 … and 26 more public</title></rect>
-<rect x="658.00" y="357.92" width="58.00" height="5.60" fill="url(#g_llm-eval-contracts)"><title>LLM Eval &amp; Contracts · 5 in Mar 2026
-Private (5)</title></rect>
-<rect x="658.00" y="338.88" width="58.00" height="19.04" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 17 in Mar 2026
+<rect x="460.00" y="310.13" width="58.00" height="31.73" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 17 in Mar 2026
 Private (17)</title></rect>
-<path d="M658.00,338.88 L658.00,317.24 Q658.00,314.24 661.00,314.24 L713.00,314.24 Q716.00,314.24 716.00,317.24 L716.00,338.88 Z" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 22 in Mar 2026
-Private (22)</title></path>
-<text x="687.00" y="310.24" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">73</text>
-<text x="687.00" y="298.24" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#6f42c1" text-anchor="middle">Agent</text>
-<text x="687.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Mar</text>
-<rect x="724.00" y="343.36" width="58.00" height="52.64" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 47 in Apr 2026
+<path d="M460.00,310.13 L460.00,262.73 Q460.00,259.73 463.00,259.73 L515.00,259.73 Q518.00,259.73 518.00,262.73 L518.00,310.13 Z" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 27 in Mar 2026
+Private (27)</title></path>
+<text x="489.00" y="255.73" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">73</text>
+<text x="489.00" y="243.73" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#6f42c1" text-anchor="middle">Agent</text>
+<text x="489.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Mar</text>
+<rect x="526.00" y="263.47" width="58.00" height="132.53" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 71 in Apr 2026
 
 Public (47):
 • coding-workflow — Update OPERATIONS.md
 • coding-workflow — docs: tighten sync pass guidance
 • coding-workflow — docs: make sync pass prompts executable
-… and 44 more public</title></rect>
-<rect x="724.00" y="325.44" width="58.00" height="17.92" fill="url(#g_llm-eval-contracts)"><title>LLM Eval &amp; Contracts · 16 in Apr 2026
-Private (16)</title></rect>
-<rect x="724.00" y="316.48" width="58.00" height="8.96" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 8 in Apr 2026
-Private (8)</title></rect>
-<rect x="724.00" y="307.52" width="58.00" height="8.96" fill="url(#g_live-trading)"><title>Live Trading Ops · 8 in Apr 2026
-Private (8)</title></rect>
-<path d="M724.00,307.52 L724.00,283.64 Q724.00,280.64 727.00,280.64 L779.00,280.64 Q782.00,280.64 782.00,283.64 L782.00,307.52 Z" fill="url(#g_content-methodology)"><title>Content &amp; Methodology · 24 in Apr 2026
-Private (24)</title></path>
-<text x="753.00" y="276.64" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">103</text>
-<text x="753.00" y="264.64" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#6f42c1" text-anchor="middle">Agent</text>
-<text x="753.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Apr</text>
-<rect x="790.00" y="384.80" width="58.00" height="11.20" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 10 in May 2026
+… and 44 more public
 
-Public (10):
-• coding-workflow — docs: expand root readme english entrypoint
+Private (24)</title></rect>
+<rect x="526.00" y="254.13" width="58.00" height="9.33" fill="url(#g_llm-eval-contracts)"><title>LLM Eval &amp; Contracts · 5 in Apr 2026
+Private (5)</title></rect>
+<rect x="526.00" y="239.20" width="58.00" height="14.93" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 8 in Apr 2026
+Private (8)</title></rect>
+<rect x="526.00" y="224.27" width="58.00" height="14.93" fill="url(#g_live-trading)"><title>Live Trading Ops · 8 in Apr 2026
+Private (8)</title></rect>
+<path d="M526.00,224.27 L526.00,206.73 Q526.00,203.73 529.00,203.73 L581.00,203.73 Q584.00,203.73 584.00,206.73 L584.00,224.27 Z" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 11 in Apr 2026
+Private (11)</title></path>
+<text x="555.00" y="199.73" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">103</text>
+<text x="555.00" y="187.73" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#6f42c1" text-anchor="middle">Agent</text>
+<text x="555.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Apr</text>
+<rect x="592.00" y="369.87" width="58.00" height="26.13" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 14 in May 2026
+
+Public (11):
 • coding-workflow — 文档更新
 • acceptance-agent — Create acceptance agent companion artifact
-… and 7 more public</title></rect>
-<rect x="790.00" y="382.56" width="58.00" height="2.24" fill="url(#g_llm-eval-contracts)"><title>LLM Eval &amp; Contracts · 2 in May 2026
+• coding-workflow — Update README.md
+… and 8 more public
+
+Private (3)</title></rect>
+<rect x="592.00" y="366.13" width="58.00" height="3.73" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 2 in May 2026
 Private (2)</title></rect>
-<rect x="790.00" y="380.32" width="58.00" height="2.24" fill="url(#g_quant-optuna)"><title>Quant Strategy &amp; Optuna · 2 in May 2026
-Private (2)</title></rect>
-<rect x="790.00" y="379.20" width="58.00" height="1.12" fill="url(#g_backtest-mcs)"><title>Backtest &amp; MCS Research · 1 in May 2026
+<rect x="592.00" y="364.27" width="58.00" height="1.87" fill="url(#g_backtest-mcs)"><title>Backtest &amp; MCS Research · 1 in May 2026
 
 Public (1):
 • RBT — Clarify non-commercial license terms</title></rect>
-<path d="M790.00,379.20 L790.00,349.72 Q790.00,346.72 793.00,346.72 L845.00,346.72 Q848.00,346.72 848.00,349.72 L848.00,379.20 Z" fill="url(#g_content-methodology)"><title>Content &amp; Methodology · 29 in May 2026
+<rect x="592.00" y="358.67" width="58.00" height="5.60" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 3 in May 2026
+Private (3)</title></rect>
+<rect x="592.00" y="345.60" width="58.00" height="13.07" fill="url(#g_ast-tooling)"><title>AST &amp; Code Tooling · 7 in May 2026
 
-Public (4):
-• wlvh — Fix essay title punctuation
-• wlvh — Expand profile README with public evidence map
-• wlvh — Add semantic model work to profile
-… and 1 more public
+Public (7):
+• PySymphony — Add files via upload
+• PySymphony — Update notebook_fast_v3.md
+• PySymphony — Update notebook_fast_v3.md
+… and 4 more public</title></rect>
+<path d="M592.00,345.60 L592.00,238.47 Q592.00,235.47 595.00,235.47 L647.00,235.47 Q650.00,235.47 650.00,238.47 L650.00,345.60 Z" fill="url(#g_content-methodology)"><title>Content &amp; Methodology · 59 in May 2026
 
-Private (25)</title></path>
-<text x="819.00" y="342.72" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">44</text>
-<text x="819.00" y="330.72" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#57606a" text-anchor="middle">Content</text>
-<text x="819.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">May</text>
+Public (9):
+• wlvh — Add public commit subjects to stacked-column tooltips
+• wlvh — Publish interactive chart via GitHub Pages
+• wlvh — Inline the SVG in index.html and add a JS tooltip handler
+… and 6 more public
+
+Private (50)</title></path>
+<text x="621.00" y="231.47" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">86</text>
+<text x="621.00" y="219.47" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#57606a" text-anchor="middle">Content</text>
+<text x="621.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">May</text>
+<rect x="658.00" y="388.53" width="58.00" height="7.47" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 4 in Jun 2026
+Private (4)</title></rect>
+<rect x="658.00" y="384.80" width="58.00" height="3.73" fill="url(#g_timeseries-ml)"><title>Time-Series ML · 2 in Jun 2026
+
+Public (2):
+• longterm-renewable-power-forecasting — Add forecasting scripts and reading guide
+• longterm-renewable-power-forecasting — Rewrite README in English</title></rect>
+<rect x="658.00" y="375.47" width="58.00" height="9.33" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 5 in Jun 2026
+Private (5)</title></rect>
+<rect x="658.00" y="334.40" width="58.00" height="41.07" fill="url(#g_data-pipeline)"><title>Data Pipeline &amp; Schema · 22 in Jun 2026
+
+Public (22):
+• AlphaVantage — Update SEC_research.md
+• AlphaVantage — Update SEC_research.md
+• AlphaVantage — Add files via upload
+… and 19 more public</title></rect>
+<path d="M658.00,334.40 L658.00,210.47 Q658.00,207.47 661.00,207.47 L713.00,207.47 Q716.00,207.47 716.00,210.47 L716.00,334.40 Z" fill="url(#g_content-methodology)"><title>Content &amp; Methodology · 68 in Jun 2026
+Private (68)</title></path>
+<text x="687.00" y="203.47" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">101</text>
+<text x="687.00" y="191.47" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#57606a" text-anchor="middle">Content</text>
+<text x="687.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Jun</text>
+<rect x="724.00" y="347.47" width="58.00" height="48.53" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 26 in Jul 2026
+
+Public (19):
+• coding-workflow — Update README.md
+• coding-workflow — Update README.md
+• coding-workflow — Update README.md
+… and 16 more public
+
+Private (7)</title></rect>
+<rect x="724.00" y="291.47" width="58.00" height="56.00" fill="url(#g_llm-eval-contracts)"><title>LLM Eval &amp; Contracts · 30 in Jul 2026
+
+Public (30):
+• SEC_metrics — fix: bind vNext projection to complete verified batches
+• SEC_metrics — test: record committed vNext acceptance
+• SEC_metrics — test: publish final PR acceptance evidence
+… and 27 more public</title></rect>
+<rect x="724.00" y="280.27" width="58.00" height="11.20" fill="url(#g_semantic-dax)"><title>Semantic Model &amp; DAX · 6 in Jul 2026
+Private (6)</title></rect>
+<rect x="724.00" y="278.40" width="58.00" height="1.87" fill="url(#g_data-pipeline)"><title>Data Pipeline &amp; Schema · 1 in Jul 2026
+
+Public (1):
+• AlphaVantage — Add files via upload</title></rect>
+<rect x="724.00" y="274.67" width="58.00" height="3.73" fill="url(#g_content-methodology)"><title>Content &amp; Methodology · 2 in Jul 2026
+Private (2)</title></rect>
+<text x="753.00" y="270.67" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">65</text>
+<text x="753.00" y="258.67" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#bf3989" text-anchor="middle">Eval</text>
+<text x="753.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Jul</text>
+<rect x="790.00" y="379.20" width="58.00" height="16.80" fill="url(#g_agent-orchestration)"><title>Agent Orchestration · 9 in Aug 2026
+
+Public (9):
+• coding-workflow — docs: clarify first installation and usage
+• coding-workflow — docs: make workflow sync one-command
+• coding-workflow — docs: fix onboarding and worktree proof
+… and 6 more public</title></rect>
+<path d="M790.00,379.20 L790.00,290.73 Q790.00,287.73 793.00,287.73 L845.00,287.73 Q848.00,287.73 848.00,290.73 L848.00,379.20 Z" fill="url(#g_llm-eval-contracts)"><title>LLM Eval &amp; Contracts · 49 in Aug 2026
+
+Public (49):
+• SEC_metrics — fix(vnext): close Issue #15 authority evidence
+• SEC_metrics — fix(vnext): derive legacy helper scopes from call graph
+• SEC_metrics — fix(vnext): restore complete producer record anchors
+… and 46 more public</title></path>
+<text x="819.00" y="283.73" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1f2328" text-anchor="middle">58</text>
+<text x="819.00" y="271.73" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#bf3989" text-anchor="middle">Eval</text>
+<text x="819.00" y="414.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#1f2328" text-anchor="middle">Aug</text>
 <line x1="64.00" y1="396.00" x2="848.00" y2="396.00" stroke="#1f2328" stroke-width="1"/>
 <rect x="64.00" y="472.00" width="12" height="12" rx="2.5" fill="#6f42c1"/>
 <text x="84.00" y="482.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start">Agent Orchestration</text>
 <rect x="260.00" y="489.00" width="110.00" height="1" fill="#d0d7de"/>
-<rect x="260.00" y="471.72" width="7.79" height="18.28" fill="#6f42c1" opacity="0.9"/>
-<rect x="269.29" y="468.00" width="7.79" height="22.00" fill="#6f42c1" opacity="0.9"/>
+<rect x="260.00" y="490.00" width="7.79" height="0.00" fill="#6f42c1" opacity="0.9"/>
+<rect x="269.29" y="490.00" width="7.79" height="0.00" fill="#6f42c1" opacity="0.9"/>
 <rect x="278.58" y="490.00" width="7.79" height="0.00" fill="#6f42c1" opacity="0.9"/>
-<rect x="287.88" y="490.00" width="7.79" height="0.00" fill="#6f42c1" opacity="0.9"/>
+<rect x="287.88" y="489.07" width="7.79" height="0.93" fill="#6f42c1" opacity="0.9"/>
 <rect x="297.17" y="490.00" width="7.79" height="0.00" fill="#6f42c1" opacity="0.9"/>
 <rect x="306.46" y="490.00" width="7.79" height="0.00" fill="#6f42c1" opacity="0.9"/>
-<rect x="315.75" y="487.29" width="7.79" height="2.71" fill="#6f42c1" opacity="0.9"/>
-<rect x="325.04" y="490.00" width="7.79" height="0.00" fill="#6f42c1" opacity="0.9"/>
-<rect x="334.33" y="490.00" width="7.79" height="0.00" fill="#6f42c1" opacity="0.9"/>
-<rect x="343.62" y="480.18" width="7.79" height="9.82" fill="#6f42c1" opacity="0.9"/>
-<rect x="352.92" y="474.09" width="7.79" height="15.91" fill="#6f42c1" opacity="0.9"/>
-<rect x="362.21" y="486.62" width="7.79" height="3.38" fill="#6f42c1" opacity="0.9"/>
-<text x="440.00" y="482.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">213 · 23%</text>
+<rect x="315.75" y="481.01" width="7.79" height="8.99" fill="#6f42c1" opacity="0.9"/>
+<rect x="325.04" y="468.00" width="7.79" height="22.00" fill="#6f42c1" opacity="0.9"/>
+<rect x="334.33" y="485.66" width="7.79" height="4.34" fill="#6f42c1" opacity="0.9"/>
+<rect x="343.62" y="488.76" width="7.79" height="1.24" fill="#6f42c1" opacity="0.9"/>
+<rect x="352.92" y="481.94" width="7.79" height="8.06" fill="#6f42c1" opacity="0.9"/>
+<rect x="362.21" y="487.21" width="7.79" height="2.79" fill="#6f42c1" opacity="0.9"/>
+<text x="440.00" y="482.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">156 · 20%</text>
 <rect x="64.00" y="502.00" width="12" height="12" rx="2.5" fill="#bf3989"/>
 <text x="84.00" y="512.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start">LLM Eval &amp; Contracts</text>
 <rect x="260.00" y="519.00" width="110.00" height="1" fill="#d0d7de"/>
@@ -228,139 +255,139 @@ Private (25)</title></path>
 <rect x="297.17" y="520.00" width="7.79" height="0.00" fill="#bf3989" opacity="0.9"/>
 <rect x="306.46" y="520.00" width="7.79" height="0.00" fill="#bf3989" opacity="0.9"/>
 <rect x="315.75" y="520.00" width="7.79" height="0.00" fill="#bf3989" opacity="0.9"/>
-<rect x="325.04" y="520.00" width="7.79" height="0.00" fill="#bf3989" opacity="0.9"/>
+<rect x="325.04" y="517.76" width="7.79" height="2.24" fill="#bf3989" opacity="0.9"/>
 <rect x="334.33" y="520.00" width="7.79" height="0.00" fill="#bf3989" opacity="0.9"/>
-<rect x="343.62" y="513.12" width="7.79" height="6.88" fill="#bf3989" opacity="0.9"/>
-<rect x="352.92" y="498.00" width="7.79" height="22.00" fill="#bf3989" opacity="0.9"/>
-<rect x="362.21" y="517.25" width="7.79" height="2.75" fill="#bf3989" opacity="0.9"/>
-<text x="440.00" y="512.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">23 · 2%</text>
+<rect x="343.62" y="520.00" width="7.79" height="0.00" fill="#bf3989" opacity="0.9"/>
+<rect x="352.92" y="506.53" width="7.79" height="13.47" fill="#bf3989" opacity="0.9"/>
+<rect x="362.21" y="498.00" width="7.79" height="22.00" fill="#bf3989" opacity="0.9"/>
+<text x="440.00" y="512.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">84 · 11%</text>
 <rect x="64.00" y="532.00" width="12" height="12" rx="2.5" fill="#1a7f37"/>
 <text x="84.00" y="542.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start">Quant Strategy &amp; Optuna</text>
 <rect x="260.00" y="549.00" width="110.00" height="1" fill="#d0d7de"/>
-<rect x="260.00" y="549.20" width="7.79" height="0.80" fill="#1a7f37" opacity="0.9"/>
-<rect x="269.29" y="539.40" width="7.79" height="10.60" fill="#1a7f37" opacity="0.9"/>
-<rect x="278.58" y="528.00" width="7.79" height="22.00" fill="#1a7f37" opacity="0.9"/>
-<rect x="287.88" y="546.29" width="7.79" height="3.71" fill="#1a7f37" opacity="0.9"/>
-<rect x="297.17" y="549.73" width="7.79" height="0.27" fill="#1a7f37" opacity="0.9"/>
-<rect x="306.46" y="550.00" width="7.79" height="0.00" fill="#1a7f37" opacity="0.9"/>
-<rect x="315.75" y="550.00" width="7.79" height="0.00" fill="#1a7f37" opacity="0.9"/>
-<rect x="325.04" y="548.67" width="7.79" height="1.33" fill="#1a7f37" opacity="0.9"/>
-<rect x="334.33" y="545.76" width="7.79" height="4.24" fill="#1a7f37" opacity="0.9"/>
-<rect x="343.62" y="545.49" width="7.79" height="4.51" fill="#1a7f37" opacity="0.9"/>
-<rect x="352.92" y="547.88" width="7.79" height="2.12" fill="#1a7f37" opacity="0.9"/>
-<rect x="362.21" y="549.47" width="7.79" height="0.53" fill="#1a7f37" opacity="0.9"/>
-<text x="440.00" y="542.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">189 · 20%</text>
+<rect x="260.00" y="531.88" width="7.79" height="18.12" fill="#1a7f37" opacity="0.9"/>
+<rect x="269.29" y="548.71" width="7.79" height="1.29" fill="#1a7f37" opacity="0.9"/>
+<rect x="278.58" y="550.00" width="7.79" height="0.00" fill="#1a7f37" opacity="0.9"/>
+<rect x="287.88" y="550.00" width="7.79" height="0.00" fill="#1a7f37" opacity="0.9"/>
+<rect x="297.17" y="543.53" width="7.79" height="6.47" fill="#1a7f37" opacity="0.9"/>
+<rect x="306.46" y="529.29" width="7.79" height="20.71" fill="#1a7f37" opacity="0.9"/>
+<rect x="315.75" y="528.00" width="7.79" height="22.00" fill="#1a7f37" opacity="0.9"/>
+<rect x="325.04" y="539.65" width="7.79" height="10.35" fill="#1a7f37" opacity="0.9"/>
+<rect x="334.33" y="547.41" width="7.79" height="2.59" fill="#1a7f37" opacity="0.9"/>
+<rect x="343.62" y="550.00" width="7.79" height="0.00" fill="#1a7f37" opacity="0.9"/>
+<rect x="352.92" y="550.00" width="7.79" height="0.00" fill="#1a7f37" opacity="0.9"/>
+<rect x="362.21" y="550.00" width="7.79" height="0.00" fill="#1a7f37" opacity="0.9"/>
+<text x="440.00" y="542.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">63 · 8%</text>
 <rect x="64.00" y="562.00" width="12" height="12" rx="2.5" fill="#2da44e"/>
 <text x="84.00" y="572.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start">Live Trading Ops</text>
 <rect x="260.00" y="579.00" width="110.00" height="1" fill="#d0d7de"/>
-<rect x="260.00" y="580.00" width="7.79" height="0.00" fill="#2da44e" opacity="0.9"/>
-<rect x="269.29" y="558.00" width="7.79" height="22.00" fill="#2da44e" opacity="0.9"/>
-<rect x="278.58" y="575.60" width="7.79" height="4.40" fill="#2da44e" opacity="0.9"/>
-<rect x="287.88" y="577.80" width="7.79" height="2.20" fill="#2da44e" opacity="0.9"/>
+<rect x="260.00" y="574.50" width="7.79" height="5.50" fill="#2da44e" opacity="0.9"/>
+<rect x="269.29" y="580.00" width="7.79" height="0.00" fill="#2da44e" opacity="0.9"/>
+<rect x="278.58" y="580.00" width="7.79" height="0.00" fill="#2da44e" opacity="0.9"/>
+<rect x="287.88" y="580.00" width="7.79" height="0.00" fill="#2da44e" opacity="0.9"/>
 <rect x="297.17" y="580.00" width="7.79" height="0.00" fill="#2da44e" opacity="0.9"/>
 <rect x="306.46" y="580.00" width="7.79" height="0.00" fill="#2da44e" opacity="0.9"/>
 <rect x="315.75" y="580.00" width="7.79" height="0.00" fill="#2da44e" opacity="0.9"/>
-<rect x="325.04" y="580.00" width="7.79" height="0.00" fill="#2da44e" opacity="0.9"/>
+<rect x="325.04" y="558.00" width="7.79" height="22.00" fill="#2da44e" opacity="0.9"/>
 <rect x="334.33" y="580.00" width="7.79" height="0.00" fill="#2da44e" opacity="0.9"/>
 <rect x="343.62" y="580.00" width="7.79" height="0.00" fill="#2da44e" opacity="0.9"/>
-<rect x="352.92" y="571.20" width="7.79" height="8.80" fill="#2da44e" opacity="0.9"/>
+<rect x="352.92" y="580.00" width="7.79" height="0.00" fill="#2da44e" opacity="0.9"/>
 <rect x="362.21" y="580.00" width="7.79" height="0.00" fill="#2da44e" opacity="0.9"/>
-<text x="440.00" y="572.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">34 · 4%</text>
+<text x="440.00" y="572.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">10 · 1%</text>
 <rect x="64.00" y="592.00" width="12" height="12" rx="2.5" fill="#bf8700"/>
 <text x="84.00" y="602.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start">Backtest &amp; MCS Research</text>
 <rect x="260.00" y="609.00" width="110.00" height="1" fill="#d0d7de"/>
 <rect x="260.00" y="610.00" width="7.79" height="0.00" fill="#bf8700" opacity="0.9"/>
-<rect x="269.29" y="609.41" width="7.79" height="0.59" fill="#bf8700" opacity="0.9"/>
-<rect x="278.58" y="610.00" width="7.79" height="0.00" fill="#bf8700" opacity="0.9"/>
-<rect x="287.88" y="610.00" width="7.79" height="0.00" fill="#bf8700" opacity="0.9"/>
-<rect x="297.17" y="588.00" width="7.79" height="22.00" fill="#bf8700" opacity="0.9"/>
-<rect x="306.46" y="607.62" width="7.79" height="2.38" fill="#bf8700" opacity="0.9"/>
-<rect x="315.75" y="606.43" width="7.79" height="3.57" fill="#bf8700" opacity="0.9"/>
+<rect x="269.29" y="588.00" width="7.79" height="22.00" fill="#bf8700" opacity="0.9"/>
+<rect x="278.58" y="607.62" width="7.79" height="2.38" fill="#bf8700" opacity="0.9"/>
+<rect x="287.88" y="606.43" width="7.79" height="3.57" fill="#bf8700" opacity="0.9"/>
+<rect x="297.17" y="610.00" width="7.79" height="0.00" fill="#bf8700" opacity="0.9"/>
+<rect x="306.46" y="610.00" width="7.79" height="0.00" fill="#bf8700" opacity="0.9"/>
+<rect x="315.75" y="610.00" width="7.79" height="0.00" fill="#bf8700" opacity="0.9"/>
 <rect x="325.04" y="610.00" width="7.79" height="0.00" fill="#bf8700" opacity="0.9"/>
-<rect x="334.33" y="610.00" width="7.79" height="0.00" fill="#bf8700" opacity="0.9"/>
+<rect x="334.33" y="609.41" width="7.79" height="0.59" fill="#bf8700" opacity="0.9"/>
 <rect x="343.62" y="610.00" width="7.79" height="0.00" fill="#bf8700" opacity="0.9"/>
 <rect x="352.92" y="610.00" width="7.79" height="0.00" fill="#bf8700" opacity="0.9"/>
-<rect x="362.21" y="609.41" width="7.79" height="0.59" fill="#bf8700" opacity="0.9"/>
-<text x="440.00" y="602.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">49 · 5%</text>
+<rect x="362.21" y="610.00" width="7.79" height="0.00" fill="#bf8700" opacity="0.9"/>
+<text x="440.00" y="602.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">48 · 6%</text>
 <rect x="472.00" y="472.00" width="12" height="12" rx="2.5" fill="#1b7c83"/>
 <text x="492.00" y="482.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start">Time-Series ML</text>
 <rect x="668.00" y="489.00" width="110.00" height="1" fill="#d0d7de"/>
 <rect x="668.00" y="490.00" width="7.79" height="0.00" fill="#1b7c83" opacity="0.9"/>
 <rect x="677.29" y="468.00" width="7.79" height="22.00" fill="#1b7c83" opacity="0.9"/>
-<rect x="686.58" y="483.93" width="7.79" height="6.07" fill="#1b7c83" opacity="0.9"/>
+<rect x="686.58" y="490.00" width="7.79" height="0.00" fill="#1b7c83" opacity="0.9"/>
 <rect x="695.88" y="490.00" width="7.79" height="0.00" fill="#1b7c83" opacity="0.9"/>
-<rect x="705.17" y="486.21" width="7.79" height="3.79" fill="#1b7c83" opacity="0.9"/>
+<rect x="705.17" y="490.00" width="7.79" height="0.00" fill="#1b7c83" opacity="0.9"/>
 <rect x="714.46" y="490.00" width="7.79" height="0.00" fill="#1b7c83" opacity="0.9"/>
 <rect x="723.75" y="490.00" width="7.79" height="0.00" fill="#1b7c83" opacity="0.9"/>
 <rect x="733.04" y="490.00" width="7.79" height="0.00" fill="#1b7c83" opacity="0.9"/>
 <rect x="742.33" y="490.00" width="7.79" height="0.00" fill="#1b7c83" opacity="0.9"/>
-<rect x="751.62" y="490.00" width="7.79" height="0.00" fill="#1b7c83" opacity="0.9"/>
+<rect x="751.62" y="481.20" width="7.79" height="8.80" fill="#1b7c83" opacity="0.9"/>
 <rect x="760.92" y="490.00" width="7.79" height="0.00" fill="#1b7c83" opacity="0.9"/>
 <rect x="770.21" y="490.00" width="7.79" height="0.00" fill="#1b7c83" opacity="0.9"/>
-<text x="848.00" y="482.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">42 · 4%</text>
+<text x="848.00" y="482.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">7 · 1%</text>
 <rect x="472.00" y="502.00" width="12" height="12" rx="2.5" fill="#0969da"/>
 <text x="492.00" y="512.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start">Semantic Model &amp; DAX</text>
 <rect x="668.00" y="519.00" width="110.00" height="1" fill="#d0d7de"/>
 <rect x="668.00" y="520.00" width="7.79" height="0.00" fill="#0969da" opacity="0.9"/>
-<rect x="677.29" y="520.00" width="7.79" height="0.00" fill="#0969da" opacity="0.9"/>
-<rect x="686.58" y="520.00" width="7.79" height="0.00" fill="#0969da" opacity="0.9"/>
-<rect x="695.88" y="520.00" width="7.79" height="0.00" fill="#0969da" opacity="0.9"/>
-<rect x="705.17" y="509.00" width="7.79" height="11.00" fill="#0969da" opacity="0.9"/>
-<rect x="714.46" y="498.00" width="7.79" height="22.00" fill="#0969da" opacity="0.9"/>
-<rect x="723.75" y="512.52" width="7.79" height="7.48" fill="#0969da" opacity="0.9"/>
-<rect x="733.04" y="505.92" width="7.79" height="14.08" fill="#0969da" opacity="0.9"/>
-<rect x="742.33" y="516.04" width="7.79" height="3.96" fill="#0969da" opacity="0.9"/>
-<rect x="751.62" y="510.32" width="7.79" height="9.68" fill="#0969da" opacity="0.9"/>
-<rect x="760.92" y="520.00" width="7.79" height="0.00" fill="#0969da" opacity="0.9"/>
+<rect x="677.29" y="509.00" width="7.79" height="11.00" fill="#0969da" opacity="0.9"/>
+<rect x="686.58" y="498.00" width="7.79" height="22.00" fill="#0969da" opacity="0.9"/>
+<rect x="695.88" y="512.52" width="7.79" height="7.48" fill="#0969da" opacity="0.9"/>
+<rect x="705.17" y="505.92" width="7.79" height="14.08" fill="#0969da" opacity="0.9"/>
+<rect x="714.46" y="516.04" width="7.79" height="3.96" fill="#0969da" opacity="0.9"/>
+<rect x="723.75" y="508.12" width="7.79" height="11.88" fill="#0969da" opacity="0.9"/>
+<rect x="733.04" y="515.16" width="7.79" height="4.84" fill="#0969da" opacity="0.9"/>
+<rect x="742.33" y="518.68" width="7.79" height="1.32" fill="#0969da" opacity="0.9"/>
+<rect x="751.62" y="517.80" width="7.79" height="2.20" fill="#0969da" opacity="0.9"/>
+<rect x="760.92" y="517.36" width="7.79" height="2.64" fill="#0969da" opacity="0.9"/>
 <rect x="770.21" y="520.00" width="7.79" height="0.00" fill="#0969da" opacity="0.9"/>
-<text x="848.00" y="512.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">155 · 17%</text>
+<text x="848.00" y="512.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">185 · 24%</text>
 <rect x="472.00" y="532.00" width="12" height="12" rx="2.5" fill="#218bff"/>
 <text x="492.00" y="542.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start">Data Pipeline &amp; Schema</text>
 <rect x="668.00" y="549.00" width="110.00" height="1" fill="#d0d7de"/>
-<rect x="668.00" y="550.00" width="7.79" height="0.00" fill="#218bff" opacity="0.9"/>
-<rect x="677.29" y="550.00" width="7.79" height="0.00" fill="#218bff" opacity="0.9"/>
+<rect x="668.00" y="542.37" width="7.79" height="7.63" fill="#218bff" opacity="0.9"/>
+<rect x="677.29" y="528.00" width="7.79" height="22.00" fill="#218bff" opacity="0.9"/>
 <rect x="686.58" y="550.00" width="7.79" height="0.00" fill="#218bff" opacity="0.9"/>
-<rect x="695.88" y="542.52" width="7.79" height="7.48" fill="#218bff" opacity="0.9"/>
-<rect x="705.17" y="528.00" width="7.79" height="22.00" fill="#218bff" opacity="0.9"/>
+<rect x="695.88" y="550.00" width="7.79" height="0.00" fill="#218bff" opacity="0.9"/>
+<rect x="705.17" y="550.00" width="7.79" height="0.00" fill="#218bff" opacity="0.9"/>
 <rect x="714.46" y="550.00" width="7.79" height="0.00" fill="#218bff" opacity="0.9"/>
 <rect x="723.75" y="550.00" width="7.79" height="0.00" fill="#218bff" opacity="0.9"/>
 <rect x="733.04" y="550.00" width="7.79" height="0.00" fill="#218bff" opacity="0.9"/>
 <rect x="742.33" y="550.00" width="7.79" height="0.00" fill="#218bff" opacity="0.9"/>
-<rect x="751.62" y="550.00" width="7.79" height="0.00" fill="#218bff" opacity="0.9"/>
-<rect x="760.92" y="550.00" width="7.79" height="0.00" fill="#218bff" opacity="0.9"/>
+<rect x="751.62" y="540.12" width="7.79" height="9.88" fill="#218bff" opacity="0.9"/>
+<rect x="760.92" y="549.55" width="7.79" height="0.45" fill="#218bff" opacity="0.9"/>
 <rect x="770.21" y="550.00" width="7.79" height="0.00" fill="#218bff" opacity="0.9"/>
-<text x="848.00" y="542.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">67 · 7%</text>
+<text x="848.00" y="542.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">89 · 11%</text>
 <rect x="472.00" y="562.00" width="12" height="12" rx="2.5" fill="#bc4c00"/>
 <text x="492.00" y="572.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start">AST &amp; Code Tooling</text>
 <rect x="668.00" y="579.00" width="110.00" height="1" fill="#d0d7de"/>
 <rect x="668.00" y="580.00" width="7.79" height="0.00" fill="#bc4c00" opacity="0.9"/>
-<rect x="677.29" y="558.00" width="7.79" height="22.00" fill="#bc4c00" opacity="0.9"/>
+<rect x="677.29" y="580.00" width="7.79" height="0.00" fill="#bc4c00" opacity="0.9"/>
 <rect x="686.58" y="580.00" width="7.79" height="0.00" fill="#bc4c00" opacity="0.9"/>
 <rect x="695.88" y="580.00" width="7.79" height="0.00" fill="#bc4c00" opacity="0.9"/>
 <rect x="705.17" y="580.00" width="7.79" height="0.00" fill="#bc4c00" opacity="0.9"/>
 <rect x="714.46" y="580.00" width="7.79" height="0.00" fill="#bc4c00" opacity="0.9"/>
 <rect x="723.75" y="580.00" width="7.79" height="0.00" fill="#bc4c00" opacity="0.9"/>
 <rect x="733.04" y="580.00" width="7.79" height="0.00" fill="#bc4c00" opacity="0.9"/>
-<rect x="742.33" y="580.00" width="7.79" height="0.00" fill="#bc4c00" opacity="0.9"/>
+<rect x="742.33" y="558.00" width="7.79" height="22.00" fill="#bc4c00" opacity="0.9"/>
 <rect x="751.62" y="580.00" width="7.79" height="0.00" fill="#bc4c00" opacity="0.9"/>
 <rect x="760.92" y="580.00" width="7.79" height="0.00" fill="#bc4c00" opacity="0.9"/>
 <rect x="770.21" y="580.00" width="7.79" height="0.00" fill="#bc4c00" opacity="0.9"/>
-<text x="848.00" y="572.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">52 · 6%</text>
+<text x="848.00" y="572.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">7 · 1%</text>
 <rect x="472.00" y="592.00" width="12" height="12" rx="2.5" fill="#57606a"/>
 <text x="492.00" y="602.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start">Content &amp; Methodology</text>
 <rect x="668.00" y="609.00" width="110.00" height="1" fill="#d0d7de"/>
-<rect x="668.00" y="588.00" width="7.79" height="22.00" fill="#57606a" opacity="0.9"/>
-<rect x="677.29" y="608.82" width="7.79" height="1.18" fill="#57606a" opacity="0.9"/>
+<rect x="668.00" y="610.00" width="7.79" height="0.00" fill="#57606a" opacity="0.9"/>
+<rect x="677.29" y="610.00" width="7.79" height="0.00" fill="#57606a" opacity="0.9"/>
 <rect x="686.58" y="610.00" width="7.79" height="0.00" fill="#57606a" opacity="0.9"/>
 <rect x="695.88" y="610.00" width="7.79" height="0.00" fill="#57606a" opacity="0.9"/>
 <rect x="705.17" y="610.00" width="7.79" height="0.00" fill="#57606a" opacity="0.9"/>
 <rect x="714.46" y="610.00" width="7.79" height="0.00" fill="#57606a" opacity="0.9"/>
 <rect x="723.75" y="610.00" width="7.79" height="0.00" fill="#57606a" opacity="0.9"/>
 <rect x="733.04" y="610.00" width="7.79" height="0.00" fill="#57606a" opacity="0.9"/>
-<rect x="742.33" y="610.00" width="7.79" height="0.00" fill="#57606a" opacity="0.9"/>
-<rect x="751.62" y="610.00" width="7.79" height="0.00" fill="#57606a" opacity="0.9"/>
-<rect x="760.92" y="600.57" width="7.79" height="9.43" fill="#57606a" opacity="0.9"/>
-<rect x="770.21" y="598.61" width="7.79" height="11.39" fill="#57606a" opacity="0.9"/>
-<text x="848.00" y="602.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">112 · 12%</text>
-<text x="64.00" y="646.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#8c959f" text-anchor="start">All-time corpus: 1,673 non-merge commits since first owned repo. Private repo names redacted.</text>
+<rect x="742.33" y="590.91" width="7.79" height="19.09" fill="#57606a" opacity="0.9"/>
+<rect x="751.62" y="588.00" width="7.79" height="22.00" fill="#57606a" opacity="0.9"/>
+<rect x="760.92" y="609.35" width="7.79" height="0.65" fill="#57606a" opacity="0.9"/>
+<rect x="770.21" y="610.00" width="7.79" height="0.00" fill="#57606a" opacity="0.9"/>
+<text x="848.00" y="602.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#656d76" text-anchor="end">129 · 17%</text>
+<text x="64.00" y="646.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#8c959f" text-anchor="start">All-time corpus: 1,939 non-merge commits since first owned repo. Private repo names redacted.</text>
 </svg>

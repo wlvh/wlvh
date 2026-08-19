@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "derived_from": "Exploration of 1833 owned non-fork default-branch commits on 2026-05-11 UTC, regrouped by working domain rather than commit verb.",
+  "derived_from": "Regenerated 2026-08-19 UTC from 2138 owned non-fork default-branch commits; repo priors for newly-appearing repos decided by commit sampling.",
   "privacy_note": "Private repository names are used only in ignored local taxonomy files; the committed taxonomy redacts private repo priors.",
   "repo_weight": 5,
   "keyword_weight": 1,
@@ -35,7 +35,7 @@
       "id": "llm-eval-contracts",
       "label": "LLM Eval & Contracts",
       "color": "#bf3989",
-      "repos": [],
+      "repos": ["SEC_metrics"],
       "keywords": [
         "capability contract", "capability-contract",
         "runtime contract", "runtime-contract",
@@ -120,7 +120,7 @@
       "id": "timeseries-ml",
       "label": "Time-Series ML",
       "color": "#1b7c83",
-      "repos": [],
+      "repos": ["longterm-renewable-power-forecasting"],
       "keywords": [
         "crossformer", "crossformer_sm", "crossformersm",
         "dthelper", "dt_helper", "dt helper",
@@ -157,7 +157,7 @@
       "id": "data-pipeline",
       "label": "Data Pipeline & Schema",
       "color": "#218bff",
-      "repos": [],
+      "repos": ["AlphaVantage"],
       "keywords": [
         "field profile", "field profiling", "field-profile", "profile kernel", "profiling kernel",
         "schema refresh", "schema-refresh", "schema automation",
