@@ -26,7 +26,7 @@ A bilingual repository workflow for AI-assisted development, centered on the `wo
 - Interrogates existing claims across four coverage dimensions — Architecture, Capability / User Behavior, Testing, Governance. These are coverage requirements, not a fixed four-agent topology; the executor may investigate directly or delegate read-only work.
 - When a PR is requested, builds an external clean worktree from the committed HEAD at invocation time, so uncommitted bytes in the original worktree cannot enter either the investigation or the PR. Creates a draft PR only on explicit request — never auto-ready, never auto-merge.
 - Separates semantic judgment from mechanical checking: the agent owns findings and minimal rewrites; `sync_docs.py prepare` / `check` own source identity, path safety, UTF-8, markers, final bytes, and Git state.
-- Enforces a mechanism-necessity gate (Case G): before adding a new marker, alias, or parser, the executor must demonstrate independent state, a real consumer, and a reproducible failure path. **An evidenced zero-diff is a legitimate success**, not a failed run.
+- Enforces a mechanism-necessity rule: before adding a new marker, alias, or parser, the executor must demonstrate independent state, a real consumer, and a reproducible failure path. The general rule is defined by decision record DEC-006; Case G exercises it through a fresh-context Markdown-marker task. **An evidenced zero-diff is a legitimate success**, not a failed run.
 
 **What it does not claim.** It does not guarantee every semantic detail is correct, and it does not defend against a malicious agent holding the same permissions. It is not a substitute for IAM, CI, or an OS sandbox. On a small, low-risk repository that one person can review by hand, the full workflow is not worth its cost.
 
@@ -45,11 +45,11 @@ Spec-visible, implementation-blind verification for multi-agent coding workflows
 
 **Status, stated plainly.** The mechanism, prompt contract, toy examples, and evaluation design are public. The benchmark has **not** been run, so there are no accuracy numbers here and none should be inferred. Whether hiding the builder transcript actually reduces framing bias is a hypothesis this ablation is designed to test — including the outcome where it turns out not to.
 
-## Private Work, Public Evidence
+## Private Work and Evidence Status
 
 Some active work is private because it contains research workflows, operational scripts, unpublished infrastructure, or sensitive evaluation data. When implementation details cannot be published safely, I publish sanitized architecture notes, toy examples, and case studies.
 
-| Direction | Public evidence |
+| Direction | Evidence status |
 | --- | --- |
 | Implementation-blind acceptance for reducing structural collusion between builder and reviewer agents | [acceptance-agent](https://github.com/wlvh/acceptance-agent) |
 | Evidence-first repository fact reconstruction and isolated draft-PR delivery for coding agents | [coding-workflow](https://github.com/wlvh/coding-workflow) |
